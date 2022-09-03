@@ -4,178 +4,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Part2styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Ignition Casino</title>
 </head>
 <body>
-    <header>
-        <div><img src="./assets/logo.svg" alt="Ignition casino logo"><div><strong>Ignition</strong><small>Casino</small></div></div>
-        <nav>
+    <header class="header">
+        <div class="header__logo"><img class="header__img" src="./assets/logo.svg" alt="Ignition casino logo"><div class="header__brand"><strong>Ignition</strong><small>Casino</small></div></div>
+        <nav class="header__nav">
             <ul>
-                <li><a href="#poker">Poker</a></li>
-                <li><a href="#casino">Casino</a></li>
-                <li><a href="#">Live Dealer</a></li>
-                <li><a href="#">Virtual Sports</a></li>
-                <li><a href="#">Promotions</a></li>
+                <li class="header__li"><a class="header__link" href="#poker">Poker</a></li>
+                <li class="header__li"><a class="header__link" href="#casino">Casino</a></li>
+                <li class="header__li"><a class="header__link" href="#">Live Dealer</a></li>
+                <li class="header__li"><a class="header__link" href="#">Virtual Sports</a></li>
+                <li class="header__li"><a class="header__link" href="#">Promotions</a></li>
             </ul>
         </nav>
-        <button>Join</button>
-        <button>Login</button>
+        <button class="header__button header__button--join">Join</button>
+        <button class="header__button header__button--login">Login</button>
     </header>
-    <main>
-        <section>
-            <div>
-                <img src="./assets/hero-banner.jpeg" alt="dices cards and whiskey glass">
-                <div>
-                    <p>Get your $3000 welcome bonus</p>
-                    <button>Join Instantly</button>               
+    <main class="main">
+        <section class="banner">
+            <div class="banner__container">
+                <img class="banner__img" src="./assets/hero-banner.jpeg" alt="dices cards and whiskey glass">
+                <div class="banner__action">
+                    <h1 class="banner__h1">Get your $3000 welcome bonus</h1>
+                    <button class="banner__button banner__button--big">Join Instantly</button>               
                 </div>
-                <div>
-                    <h1>Enhanced Benefits & Rewards</h1>
-                    <p>for crypto currency deposits</p>
-                    <button>Learn More</button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <h4>Weekly 100% Match</h4>
-                    <button>Learn More</button>
-                </div>
-                <div>
-                    <h4>Monthly Rewards</h4>
-                    <button>Learn More</button>
-                </div>
-                <div>
-                    <h4>Monthly Milly</h4>
-                    <button>Learn More</button>
-                </div>
-                <div>
-                    <h4>Top Slots</h4>
-                    <button>Learn More</button>
-                </div>
-                <div>
-                    <h4>Tell a Friend</h4>
-                    <button>Learn More</button>
-                </div>
-            </div>
-            <div>
-                <div><img src="./assets/payouts.png" alt="Coins logo"><span>Fast & Easy</span><span><strong>Payouts</strong></span></div>
-                <div><img src="./assets/secure.png" alt="safebox logo"><span><strong>Safe & Secure</strong></span><span>Digital Environment</span></div>
-                <div><img src="./assets/trusted.png" alt="shield logo with accomplish tick inside logo"><span>Trusted</span><span><strong>Since 2016</strong></span></div>
-                <div><img src="./assets/browser.png" alt="elemental shape of a webpage logo"><span><strong>No App Downloads</strong></span><span>Play in your Browsers</span></div>
-                <div><img src="./assets/players.png" alt="elemental profile person logo"><span><strong>10.000</strong></span><span>Players Daily</span></div>
-            </div>
-        </section>
-        <section>
-            <div id="casino">
-                <h1>Casino Games</h1>
-                <p>Over 250 Games Available</p>
-                <div>
-                    <h3>Top Slots</h3>
-                    <div>
-                        <div><img src="./assets/reels-and-wheels.jpeg" alt="Roulette with red background"><span>Reels & Wheels</span></div>
-                        <div><img src="./assets/mystic-wilds.jpeg" alt="Fountain image"><span>Mystic Wilds</span></div>
-                        <div><img src="./assets/fast-and-sexy.jpeg" alt="Group of women happy in cartoon style"><span>Fast & Sexy</span></div>
-                    </div>
-                    <button>View More</button>
-                </div>
-                <div>
-                    <h3>Live Casino</h3>
-                    <div>
-                        <div><img src="./assets/live-blackjack.jpeg" alt="Female croupier with flames around"><span>Live Backjack</span></div>
-                        <div><img src="./assets/live-roulette.jpeg" alt="Male croupier with flames around and roulette in the background"><span>Live Roulette</span></div>
-                        <div><img src="./assets/live-baccarat.jpeg" alt="Male croupier with flames around and casino tokens on a table"><span>Live Baccarat</span></div>
-                    </div>
-                    <button>View More</button>
-                </div>
-                <div>
-                    <h3>Most Popular Games</h3>
-                    <div>
-                        <div><img src="./assets/777-deluxe.jpeg" alt="777 deluxe logo"><span>777 Deluxe</span></div>
-                        <div><img src="./assets/golden-buffalo.jpeg" alt="Bunch of golden buffalos"><span>Golden Buffalo</span></div>
-                        <div><img src="./assets/a-night-with-cleo.jpeg" alt="Cleopatra welcoming you"><span>The New Blackjack</span></div>
-                    </div>
-                    <button>View More</button>
-                </div>
-            </div>
-            <div id="poker">
-                <h1>Poker Games</h1>
-                <p>Hit the felt 24/7</p>
-                <div>
-                    <h3>Game Types</h3>
-                    <div>
-                        <div><img src="./assets/cash-games.jpeg" alt="Bunch of dollar bills and casino tokens"><span> Games</span></div>
-                        <div><img src="./assets/zone-poker.jpeg" alt="Car plate with zone poker title with unfolded poker cards behind"><span>Zone Poker</span></div>
-                        <div><img src="./assets/jackpot-sit-and-go.jpeg" alt="Poker table seen from the top with jackpot display covering the top of the table"><span>Jackpot Sit & Go</span></div>
-                    </div>
-                    <button>View More</button>
-                </div>
-                <div>
-                    <h3>Featured Promotions</h3>
-                    <div>
-                        <div><img src="./assets/crypto-depositors-freeroll.jpeg" alt="V.I.P. spot on the poker table"><span>Crypto Depositior´s Freeroll</span></div>
-                        <div><img src="./assets/monthly-milly-tournaments.jpeg" alt="Flame circle with yellow and blue tint on top and bottom half respectively with hooded man behind throwing cards at you"><span>150K GTD Sunday</span></div>
-                        <div><img src="./assets/mad-mondays-tournaments.jpeg" alt=""><span>Mad Monday Tournaments</span></div>
-                    </div>
-                    <button>View More</button>
-                </div>
-                <div>
-                    <h3>Recurring Tournament Series</h3>
-                    <div>
-                        <div><img src="./assets/crypto-poker-open.jpeg" alt="Casino token with central bitcoin logo with two unfolded poker cards behind"><span>Crypto Open Poker</span></div>
-                        <div><img src="./assets/black-diamond-poker-open.jpeg" alt="Casino Token with black diamond logo"><span>11th Black Diamond Poker</span></div>
-                        <div><img src="./assets/super-millions-poker-open.jpeg" alt="Casino token with super millions logo"><span>Super Millions Poker</span></div>
-                    </div>
-                    <button>View More</button>
+                <div class="banner__info banner__info--main">
+                    <h2 class="banner__h2">Enhanced Benefits & Rewards</h2>
+                    <p class="banner__p">for crypto currency deposits</p>
+                    <button class="banner__button banner__button--nobg">Learn More</button>
                 </div>
             </div>
         </section>
-        <section>
-            <h2>Testimonials</h2>
-            <div>
-                <div>
-                    <p>I find the live casino games entertaining. and I like how Ignition has lots of Crypto options</p>
-                    <span>Jhon.B</span>
+        <section class="info"></section>
+            <div class="info__container">
+                <div class="info__container">
+                    <h4 class="info__h4">Weekly 100% Match</h4>
+                    <button class="info__button">Learn More</button>
                 </div>
-                <div>
-                    <p>Ignition is a site i log onto so that i can relax, have some fun, and most importantly win some Poker</p>
-                    <span>Camron.A</span>
+                <div class="info__container">
+                    <h4 class="info__h4">Monthly Rewards</h4>
+                    <button class="info__button">Learn More</button>
                 </div>
-                <div>
-                    <p>Sites shouldn't make it hard for you to withdraw. Ignition isn't like that. Its so easy and quick to get your money out.</p>
-                    <span>Edd.C</span>
+                <div class="info__container">
+                    <h4 class="info__h4">Monthly Milly</h4>
+                    <button class="info__button">Learn More</button>
                 </div>
-                <div>
-                    <p>One of the best parts of Ignition is its customer service. You can chat with someone in real time, and they are super helpful.</p>
-                    <span>Paulos.S</span>
+                <div class="info__container">
+                    <h4 class="info__h4">Top Slots</h4>
+                    <button class="info__button">Learn More</button>
+                </div>
+                <div class="info__container">
+                    <h4 class="info__h4">Tell a Friend</h4>
+                    <button class="info__button">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="features__box"><img class="features__img" src="./assets/payouts.png" alt="Coins logo"><span class="features__span">Fast & Easy</span><span><strong>Payouts</strong></span></div>
+            <div class="features__box"><img class="features__img" src="./assets/secure.png" alt="safebox logo"><span class="features__span"><strong>Safe & Secure</strong></span><span>Digital Environment</span></div>
+            <div class="features__box"><img class="features__img" src="./assets/trusted.png" alt="shield logo with accomplish tick inside logo"><span class="features__span">Trusted</span><span><strong>Since 2016</strong></span></div>
+            <div class="features__box"><img class="features__img" src="./assets/browser.png" alt="elemental shape of a webpage logo"><span class="features__span"><strong>No App Downloads</strong></span><span>Play in your Browsers</span></div>
+            <div class="features__box"><img class="features__img" src="./assets/players.png" alt="elemental profile person logo"><span class="features__span"><strong>10.000</strong></span><span>Players Daily</span></div>
+        </section>
+    
+        <section class="games" id="casino">
+            <h1 class="games__h1">Casino Games</h1>
+            <p class="games__description">Over 250 Games Available</p>
+            <div class="games__container">
+                <h3 class="games__h3">Top Slots</h3>
+                <div class="games__cards">
+                    <div class="games__card"><img src="./assets/reels-and-wheels.jpeg" alt="Roulette with red background"><span>Reels & Wheels</span></div>
+                    <div class="games__card"><img src="./assets/mystic-wilds.jpeg" alt="Fountain image"><span>Mystic Wilds</span></div>
+                    <div class="games__card"><img src="./assets/fast-and-sexy.jpeg" alt="Group of women happy in cartoon style"><span>Fast & Sexy</span></div>
+                </div>
+                <button class="games__button">View More</button>
+            </div>
+            <div class="games__container">
+                <h3 class="games__h3">Live Casino</h3>
+                <div class="games__cards">
+                    <div class="games__card"><img src="./assets/live-blackjack.jpeg" alt="Female croupier with flames around"><span>Live Backjack</span></div>
+                    <div class="games__card"><img src="./assets/live-roulette.jpeg" alt="Male croupier with flames around and roulette in the background"><span>Live Roulette</span></div>
+                    <div class="games__card"><img src="./assets/live-baccarat.jpeg" alt="Male croupier with flames around and casino tokens on a table"><span>Live Baccarat</span></div>
+                </div>
+                <button class="games__button">View More</button>
+            </div>
+            <div class="games__container">
+                <h3 class="games__h3">Most Popular Games</h3>
+                <div class="games__cards">
+                    <div class="games__card"><img src="./assets/777-deluxe.jpeg" alt="777 deluxe logo"><span>777 Deluxe</span></div>
+                    <div class="games__card"><img src="./assets/golden-buffalo.jpeg" alt="Bunch of golden buffalos"><span>Golden Buffalo</span></div>
+                    <div class="games__card"><img src="./assets/a-night-with-cleo.jpeg" alt="Cleopatra welcoming you"><span>The New Blackjack</span></div>
+                </div>
+                <button class="games__button">View More</button>
+            </div>
+        </section>
+        <section class="games" id="poker">
+            <h1 class="games__h1">Poker Games</h1>
+            <p class="games__p">Hit the felt 24/7</p>
+            <div class="games__container">
+                <h3 class="games__h3">Game Types</h3>
+                <div class="games__cards">
+                    <div class="games__card"><img src="./assets/cash-games.jpeg" alt="Bunch of dollar bills and casino tokens"><span> Games</span></div>
+                    <div class="games__card"><img src="./assets/zone-poker.jpeg" alt="Car plate with zone poker title with unfolded poker cards behind"><span>Zone Poker</span></div>
+                    <div class="games__card"><img src="./assets/jackpot-sit-and-go.jpeg" alt="Poker table seen from the top with jackpot display covering the top of the table"><span>Jackpot Sit & Go</span></div>
+                </div>
+                <button class="games__button">View More</button>
+            </div>
+            <div class="games__container">
+                <h3 class="games__h3">Featured Promotions</h3>
+                <div class="games__cards">
+                    <div class="games__card"><img src="./assets/crypto-depositors-freeroll.jpeg" alt="V.I.P. spot on the poker table"><span>Crypto Depositior´s Freeroll</span></div>
+                    <div class="games__card"><img src="./assets/monthly-milly-tournaments.jpeg" alt="Flame circle with yellow and blue tint on top and bottom half respectively with hooded man behind throwing cards at you"><span>150K GTD Sunday</span></div>
+                    <div class="games__card"><img src="./assets/mad-mondays-tournaments.jpeg" alt=""><span>Mad Monday Tournaments</span></div>
+                </div>
+                <button class="games__button">View More</button>
+            </div>
+            <div class="games__container">
+                <h3 class="games__h3">Recurring Tournament Series</h3>
+                <div class="games__cards">
+                    <div class="games__card"><img src="./assets/crypto-poker-open.jpeg" alt="Casino token with central bitcoin logo with two unfolded poker cards behind"><span>Crypto Open Poker</span></div>
+                    <div class="games__card"><img src="./assets/black-diamond-poker-open.jpeg" alt="Casino Token with black diamond logo"><span>11th Black Diamond Poker</span></div>
+                    <div class="games__card"><img src="./assets/super-millions-poker-open.jpeg" alt="Casino token with super millions logo"><span>Super Millions Poker</span></div>
+                </div>
+                <button class="games__button">View More</button>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2 class="testimonials__h2">Testimonials</h2>
+            <div class="testimonials__cards">
+                <div class="testimonials__card">
+                    <p class="testimonials__p">I find the live casino games entertaining. and I like how Ignition has lots of Crypto options</p>
+                    <span class="testimonials__witness">Jhon.B</span>
+                </div>
+                <div class="testimonials__card">
+                    <p class="testimonials__p">Ignition is a site i log onto so that i can relax, have some fun, and most importantly win some Poker</p>
+                    <span class="testimonials__witness">Camron.A</span>
+                </div>
+                <div class="testimonials__card">
+                    <p class="testimonials__p">Sites shouldn't make it hard for you to withdraw. Ignition isn't like that. Its so easy and quick to get your money out.</p>
+                    <span class="testimonials__witness">Edd.C</span>
+                </div>
+                <div class="testimonials__card">
+                    <p class="testimonials__p">One of the best parts of Ignition is its customer service. You can chat with someone in real time, and they are super helpful.</p>
+                    <span class="testimonials__witness">Paulos.S</span>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-    </footer>
-    <section>
-        <div>
-            <ul>
-                <li><img src="./assets/trusted-experience.png" alt="Trusted Experience logo"></li>
-                <li><img src="./assets/bitcoin.png" alt="Bitcoin logo"><img src="./assets/bitcoin-cash.png" alt="Bitcoin cash logo"><img src="./assets/litecoin.png" alt="Litecoin logo"><img src="./assets/ethereum.png" alt="Etherium logo"><img src="./assets/tether.png" alt="Tether logo"></li>
-                <li><img src="./assets/visa.png" alt="Visa logo"><img src="./assets/maestro.png" alt="Maestro logo"><img src="./assets/secure-icon.png" alt="Secure logo"></li>
-                <li><img src="./assets/ft_18.png" alt="18+ logo"><img src="./assets/ft_ga.png" alt="GA logo"></li>
-            </ul>
-        </div>
-        <div><h4>About Us</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id ipsam corporis natus officia, hic fuga neque ab dolore adipisci odio earum quaerat atque tenetur aliquid modi quas nisi laboriosam ducimus similique dicta excepturi debitis nam ullam! Neque deserunt veniam atque ducimus omnis exercitationem, accusantium nostrum labore qui. Nemo dolore eveniet adipisci et ratione sint repudiandae ipsum, voluptas quam fuga non. Illo animi sequi laboriosam quaerat excepturi, distinctio cupiditate non vel eligendi magnam, veritatis atque dolorum reprehenderit! At nam hic quibusdam culpa totam, quas inventore ullam? Blanditiis sit iste, beatae corrupti officiis, nobis laudantium dicta consequuntur odit eveniet incidunt ex atque?</p></div>
-        <div>
-            <h4>Customer Service</h4>
-            <ul>
-                <li>FAQ</li>
-                <li>Help Center</li>
-                <li>Follow Us <img src="./assets/twitter.png" alt="Twitter logo"><img src="./assets/instagram.png" alt="Instagram logo"></li>
-                <li>Terms of Service</li>
-                <li>Privacy Policy</li>
-            </ul>
-        </div>
-    </section>
-    <section><button>Join Instantly</button><span>Claim your welcome bonus and start winning!</span></section>
+    <footer class="footer">
+            <div class="footer__container">
+                <ul class="footer__sponsors">
+                    <li class="footer__sponsor"><img src="./assets/trusted-experience.png" alt="Trusted Experience logo"></li>
+                    <li class="footer__sponsor"><img src="./assets/bitcoin.png" alt="Bitcoin logo"><img src="./assets/bitcoin-cash.png" alt="Bitcoin cash logo"><img src="./assets/litecoin.png" alt="Litecoin logo"><img src="./assets/ethereum.png" alt="Etherium logo"><img src="./assets/tether.png" alt="Tether logo"></li>
+                    <li class="footer__sponsor"><img src="./assets/visa.png" alt="Visa logo"><img src="./assets/maestro.png" alt="Maestro logo"><img src="./assets/secure-icon.png" alt="Secure logo"></li>
+                    <li class="footer__sponsor"><img src="./assets/ft_18.png" alt="18+ logo"><img src="./assets/ft_ga.png" alt="GA logo"></li>
+                </ul>
+            </div>
+            <div class="footer__container">
+                <h4 class="footer__h4">About Us</h4>
+                <p class="footer__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id ipsam corporis natus officia, hic fuga neque ab dolore adipisci odio earum quaerat atque tenetur aliquid modi quas nisi laboriosam ducimus similique dicta excepturi debitis nam ullam! Neque deserunt veniam atque ducimus omnis exercitationem, accusantium nostrum labore qui. Nemo dolore eveniet adipisci et ratione sint repudiandae ipsum, voluptas quam fuga non. Illo animi sequi laboriosam quaerat excepturi, distinctio cupiditate non vel eligendi magnam, veritatis atque dolorum reprehenderit! At nam hic quibusdam culpa totam, quas inventore ullam? Blanditiis sit iste, beatae corrupti officiis, nobis laudantium dicta consequuntur odit eveniet incidunt ex atque?</p></div>
+            <div class="footer__container">
+                <h4 class="footer__h4">Customer Service</h4>
+                <ul class="footer__ul">
+                    <li class="footer__li"><a class="footer__a">FAQ</a></li>
+                    <li class="footer__li"><a class="footer__a">Help Center</a></li>
+                    <li class="footer__li"><a class="footer__a">Follow Us</a> <a class="footer__logo footer__logo--twitter"><img src="./assets/twitter.png" alt="Twitter logo"></a><a class="footer__logo footer__logo--instagram"><img src="./assets/instagram.png" alt="Instagram logo"></a></li>
+                    <li class="footer__li"><a class="footer__a">Terms of Service</a></li>
+                    <li class="footer__li"><a class="footer__a">Privacy Policy</a></li>
+                </ul>
+            </div>
+        <div class="ribbon"><button class="ribbon__button">Join Instantly</button><span class="ribbon__span">Claim your welcome bonus and start winning!</span></div>
+    </footer>    
 </body>
 </html>
