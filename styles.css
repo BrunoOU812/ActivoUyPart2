@@ -1,9 +1,16 @@
 @import url("https://use.typekit.net/rsw3bla.css");
 @import url("http://fonts.cdnfonts.com/css/saira");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   color: white;
   background-color: #333;
   font-family: "Saira", sans-serif;
+  width: 100%;
 }
 
 .banner {
@@ -144,7 +151,10 @@ body {
   text-align: center;
   -webkit-transform: scaleX(70%);
           transform: scaleX(70%);
-  margin: 0;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 0 15px 0;
+  padding: 0;
 }
 .games__h3 {
   border-radius: 10px;
@@ -190,9 +200,89 @@ body {
 }
 .games__title {
   display: block;
-  max-height: 66px;
   padding: 0;
   margin: 0;
+}
+
+.header {
+  z-index: 5;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 105px;
+  justify-content: space-between;
+  -webkit-box-shadow: 0 8px 20px -6px black;
+          box-shadow: 0 8px 20px -6px black;
+  background-color: #333;
+}
+.header__brand {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+.header__anchor {
+  display: inline;
+  color: white;
+  font-size: 20px;
+  -webkit-transform: scaleX(70%);
+          transform: scaleX(70%);
+}
+.header__button {
+  font-family: "Saira", sans-serif;
+  font-weight: bold;
+  border: none;
+  height: 38px;
+  background-color: #ff6801;
+}
+.header__button--join {
+  width: 86px;
+  border-radius: 38px;
+}
+.header__button--login {
+  color: #ff6801;
+  background-color: transparent;
+  width: 58px;
+}
+.header__img {
+  width: 100px;
+}
+.header__li {
+  list-style: none;
+  -webkit-transform: scaleX(70%);
+          transform: scaleX(70%);
+  background-color: #effd5e;
+}
+.header__link {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-family: "Saira", sans-serif;
+  margin: 0;
+}
+.header__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #6ee3a5;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
 }
 
 .info {

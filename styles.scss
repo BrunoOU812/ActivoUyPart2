@@ -15,10 +15,15 @@ $colors:(
         blue:#0d49f5
             );
 $radius:10px;
+*{
+    box-sizing: border-box;
+}
 body{
+    margin: 0;
     color: white;
     background-color: $base-color;
     font-family: $saira;
+    width: 100%;
 }
 .banner {
     grid-column: 2/4;
@@ -144,7 +149,10 @@ body{
     font-family: $saira;
     text-align: center;
     transform: scaleX(70%);
-    margin:0;
+    height: 40px;
+    line-height: 40px;
+    margin:0 0 15px 0;
+    padding: 0;
   }
   &__h3 {
     border-radius: $radius;
@@ -173,29 +181,72 @@ body{
   }
   &__title{
     display: block;
-    max-height:66px;
     padding: 0;
     margin: 0;
   }
 }
-.header {
+.header { 
+    z-index: 5; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  position:fixed;
+  top:0;
+  width:100%;
+  height: 105px;
+  justify-content:space-between;
+  box-shadow: 0 8px 20px -6px black;
+  background-color: $base-color;
   &__brand {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  &__anchor{
+    color: white;
+    font-size: 20px;
+    font-stretch: condensed;
   }
   &__button {
+    font-family: $saira;
+    font-weight: bold;
+    border:none;
+    height: 38px;
+    background-color: $brand-color;
     &--join {
-    }
+    width: 86px;
+    border-radius: 38px;
+    }  
     &--login {
+    color: $brand-color;
+    background-color: transparent;
+    width: 58px;
     }
   }
   &__img {
+    width:100px;
   }
   &__li {
+    list-style:none;
+    transform: scaleX(70%);
+    background-color: #effd5e;
   }
   &__link {
-  }
-  &__logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-family: $saira;
+    margin: 0;
   }
   &__nav {
+  }
+  &__ul{
+    display:flex;
+    background-color: #6ee3a5;
+    justify-content:end;
+    align-items: flex-start;
+    padding:0;
   }
 }
 .info {
