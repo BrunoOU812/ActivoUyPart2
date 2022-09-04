@@ -3,21 +3,21 @@ const toggle= (pointer)=>{
     const elements=parent.querySelectorAll(':scope > div');
     const array=[...elements];
 
-    const next = (info)=>{
+    const next = ()=>{
         const last=array.pop();
         array.unshift(last);
-        document.querySelector(info).innerHTML="";
-        array.forEach(item=>document.querySelector(info).appendChild(item))
+        document.querySelector(pointer).innerHTML="";
+        array.forEach(item=>document.querySelector(pointer).appendChild(item))
     }
-    const previous = (info)=>{
+    const previous = ()=>{
         const last=array.shift();
         array.push(last);
-        document.querySelector(info).innerHTML="";
-        array.forEach(item=>document.querySelector(info).appendChild(item))
+        document.querySelector(pointer).innerHTML="";
+        array.forEach(item=>document.querySelector(pointer).appendChild(item))
     }
 
-    document.querySelector(".header__button--login").addEventListener("click", function() {next(pointer);});
-    document.querySelector(".header__button--join").addEventListener("click", function() {previous(pointer);});
+    document.querySelector(".header__button--login").addEventListener("click",next);
+    document.querySelector(".header__button--join").addEventListener("click",previous);
 }
 
-toggle(".info");
+toggle("#purple");
