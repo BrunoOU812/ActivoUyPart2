@@ -15,6 +15,7 @@ $colors:(
         blue:#0d49f5
             );
 $radius:10px;
+$toggle-size:35px;
 *{
   margin:0;
   padding:0;
@@ -397,6 +398,31 @@ body{
     min-width: 280px;
     height: 169px;
     margin:0 5px;
+  }
+  &__toggle{    
+    display: inline;
+    align-self: center;
+    z-index: 3;
+    width: $toggle-size;
+    height: $toggle-size;
+    background-color: $black-color;
+    border-radius: calc($toggle-size/2);
+    border: 2px solid rgba(200,200,200,0.5);
+    &--previous{
+      margin-right:calc(($toggle-size ) * -1);
+    &:before {
+      color: rgba(200,200,200,0.5) ;
+      content: "<";
+    }
+    }
+    &--next{
+      margin-left:calc(($toggle-size ) * -1);
+    &:before {
+      color: rgba(200,200,200,0.5) ;
+      content: ">";
+    }
+
+    }
   }
   &__h4 {
     font-size: 30px;

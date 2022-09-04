@@ -1,23 +1,25 @@
-const toggle= (pointer)=>{
+const toggle= (pointer,previousBtn,nextBtn)=>{
     const parent = document.querySelector(pointer);
     const elements=parent.querySelectorAll(':scope > div');
+    const btn=parent.querySelectorAll(':scope > button');
     const array=[...elements];
-
     const next = ()=>{
         const last=array.pop();
         array.unshift(last);
-        document.querySelector(pointer).innerHTML="";
-        array.forEach(item=>document.querySelector(pointer).appendChild(item))
+        elements.forEach(item=>{item.remove();})
+        array.forEach(item=>parent.appendChild(item));
+        parent.appendChild(btn[1])
     }
     const previous = ()=>{
         const last=array.shift();
         array.push(last);
-        document.querySelector(pointer).innerHTML="";
-        array.forEach(item=>document.querySelector(pointer).appendChild(item))
+        elements.forEach(item=>{item.remove();})
+        array.forEach(item=>parent.appendChild(item))
+        parent.appendChild(btn[1])
     }
 
-    document.querySelector(".header__button--login").addEventListener("click",next);
-    document.querySelector(".header__button--join").addEventListener("click",previous);
+    document.querySelector(nextBtn).addEventListener("click",next);
+    document.querySelector(previousBtn).addEventListener("click",previous);
 }
 
-toggle("#purple");
+toggle(".info",".info__toggle--previous",".info__toggle--next");

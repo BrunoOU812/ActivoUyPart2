@@ -522,6 +522,32 @@ body {
   height: 169px;
   margin: 0 5px;
 }
+.info__toggle {
+  display: inline;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  z-index: 3;
+  width: 35px;
+  height: 35px;
+  background-color: #1a1a1a;
+  border-radius: 17.5px;
+  border: 2px solid rgba(200, 200, 200, 0.5);
+}
+.info__toggle--previous {
+  margin-right: -35px;
+}
+.info__toggle--previous:before {
+  color: rgba(200, 200, 200, 0.5);
+  content: "<";
+}
+.info__toggle--next {
+  margin-left: -35px;
+}
+.info__toggle--next:before {
+  color: rgba(200, 200, 200, 0.5);
+  content: ">";
+}
 .info__h4 {
   font-size: 30px;
   text-align: center;
