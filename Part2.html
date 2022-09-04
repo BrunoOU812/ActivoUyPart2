@@ -11,18 +11,22 @@
 </header>
 <body>
     <header class="header">
-        <img class="header__img" src="./assets/logo.svg" alt="Ignition casino logo">        
-        <nav class="header__nav">
-            <ul class="header__ul">
-                <li class="header__li"><a class="header__link" href="#poker">Poker</a></li>
-                <li class="header__li"><a class="header__link" href="#casino">Casino</a></li>
-                <li class="header__li"><a class="header__link" href="#">Live Dealer</a></li>
-                <li class="header__li"><a class="header__link" href="#">Virtual Sports</a></li>
-                <li class="header__li"><a class="header__link" href="#">Promotions</a></li>
-            </ul>
-        </nav>
-        <button class="header__button header__button--join"><a class="header__anchor" href="#poker">Join</a></button>
-        <button class="header__button header__button--login"><a class="header__anchor" href="#poker">Login</a></button>
+        <div class="header__container">
+            <img class="header__img" src="./assets/logo.svg" alt="Ignition casino logo">        
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__li"><a class="header__link" href="#poker"><div class="header__pointer"> Poker</div></a></li>
+                    <li class="header__li"><a class="header__link" href="#casino"><div class="header__pointer"> Casino</div></a></li>
+                    <li class="header__li"><a class="header__link" href="#"><div class="header__pointer"> Live Dealer</div></a></li>
+                    <li class="header__li"><a class="header__link" href="#"><div class="header__pointer"> Virtual Sports</div></a></li>
+                    <li class="header__li"><a class="header__link" href="#"><div class="header__pointer">Promotions</div></a></li>
+                </ul>
+            </nav>
+            <div class="header__group">
+                <button class="header__button header__button--join"><div class="header__anchor" href="#poker">Join</div></button>
+                <button class="header__button header__button--login"><div class="header__anchor" href="#poker">Login</div></button>
+            </div>
+        </div>
     </header>
     <main class="main">
         <section class="banner">
@@ -30,45 +34,76 @@
                 <img class="banner__img" src="./assets/hero-banner.jpeg" alt="dices cards and whiskey glass">
                 <div class="banner__action">
                     <h1 class="banner__h1">Get your $3000 welcome bonus</h1>
-                    <button class="banner__button banner__button--big">Join Instantly</button>               
+                    <button class="banner__button banner__button--big"><div class="banner__stretch">Join Instantly</div></button>               
                 </div>
-                <div class="banner__info banner__info--main">
+                <div class="banner__info">
                     <h2 class="banner__h2">Enhanced Benefits & Rewards</h2>
                     <p class="banner__p">for crypto currency deposits</p>
-                    <button class="banner__button banner__button--nobg">Learn More</button>
+                    <button class="banner__button banner__button--nobg"><div>Learn More</div></button>
                 </div>
             </div>
         </section>
-        <section class="info"></section>
-            <div class="info__container">
+        <section class="info">
                 <div class="info__container">
-                    <h4 class="info__h4">Weekly 100% Match</h4>
+                    <h4 class="info__h4">Weekly <br/>100% Match</h4>
                     <button class="info__button">Learn More</button>
                 </div>
                 <div class="info__container">
-                    <h4 class="info__h4">Monthly Rewards</h4>
+                    <h4 class="info__h4">Monthly <br/>Rewards</h4>
                     <button class="info__button">Learn More</button>
                 </div>
                 <div class="info__container">
-                    <h4 class="info__h4">Monthly Milly</h4>
+                    <h4 class="info__h4">Monthly <br/>Milly</h4>
                     <button class="info__button">Learn More</button>
                 </div>
                 <div class="info__container">
-                    <h4 class="info__h4">Top Slots</h4>
+                    <h4 class="info__h4">Top <br/>Slots</h4>
                     <button class="info__button">Learn More</button>
                 </div>
                 <div class="info__container">
-                    <h4 class="info__h4">Tell a Friend</h4>
+                    <h4 class="info__h4">Tell <br/>a Friend</h4>
                     <button class="info__button">Learn More</button>
                 </div>
-            </div>
         </section>
         <section class="features">
-            <div class="features__box"><img class="features__img" src="./assets/payouts.png" alt="Coins logo"><span class="features__span">Fast & Easy</span><span><strong>Payouts</strong></span></div>
-            <div class="features__box"><img class="features__img" src="./assets/secure.png" alt="safebox logo"><span class="features__span"><strong>Safe & Secure</strong></span><span>Digital Environment</span></div>
-            <div class="features__box"><img class="features__img" src="./assets/trusted.png" alt="shield logo with accomplish tick inside logo"><span class="features__span">Trusted</span><span><strong>Since 2016</strong></span></div>
-            <div class="features__box"><img class="features__img" src="./assets/browser.png" alt="elemental shape of a webpage logo"><span class="features__span"><strong>No App Downloads</strong></span><span>Play in your Browsers</span></div>
-            <div class="features__box"><img class="features__img" src="./assets/players.png" alt="elemental profile person logo"><span class="features__span"><strong>10.000</strong></span><span>Players Daily</span></div>
+            <div class="features__box">
+                <img class="features__img" src="./assets/payouts.png" alt="Coins logo">
+                <span class="features__span">
+                    <span>Fast & Easy</span>
+                    <br/>
+                    <strong>Payouts</strong>     
+                </span>           
+            </div>
+            <div class="features__box">
+                <img class="features__img" src="./assets/secure.png" alt="safebox logo">
+                <span class="features__span">
+                    <strong>Safe & Secure</strong>
+                    <br/>
+                    <span>Digital Environment</span>
+                </div>
+            <div class="features__box">
+                <img class="features__img" src="./assets/trusted.png" alt="shield logo with accomplish tick inside logo">
+                <span class="features__span">
+                    <span>Trusted</span>
+                    <br/>
+                    <strong>Since 2016</strong>
+                </span>
+            </div>
+            <div class="features__box">
+                <img class="features__img" src="./assets/browser.png" alt="elemental shape of a webpage logo">
+                <span class="features__span">
+                    <strong>No App Downloads</strong>
+                    <br/>
+                    <span>Play in your Browsers</span>
+                </span>
+            </div>
+            <div class="features__box">
+                <img class="features__img" src="./assets/players.png" alt="elemental profile person logo">
+                <span class="features__span">
+                    <strong>10.000</strong>
+                    <br/>
+                    <span>Players Daily</span>
+                </div>
         </section>
     
         <section class="games games--casino" id="casino">
@@ -141,19 +176,27 @@
             <h2 class="testimonials__h2">Testimonials</h2>
             <div class="testimonials__cards">
                 <div class="testimonials__card">
+                    <img class="testimonials__quote" src="./assets/quote.png" alt="quotes">
                     <p class="testimonials__p">I find the live casino games entertaining. and I like how Ignition has lots of Crypto options</p>
+                    <img class="testimonials__quote testimonials__quote--right" src="./assets/quote.png" alt="quotes">
                     <span class="testimonials__witness">Jhon.B</span>
                 </div>
                 <div class="testimonials__card">
+                    <img class="testimonials__quote" src="./assets/quote.png" alt="quotes">
                     <p class="testimonials__p">Ignition is a site i log onto so that i can relax, have some fun, and most importantly win some Poker</p>
+                    <img class="testimonials__quote testimonials__quote--right" src="./assets/quote.png" alt="quotes">
                     <span class="testimonials__witness">Camron.A</span>
                 </div>
                 <div class="testimonials__card">
+                    <img class="testimonials__quote" src="./assets/quote.png" alt="quotes">
                     <p class="testimonials__p">Sites shouldn't make it hard for you to withdraw. Ignition isn't like that. Its so easy and quick to get your money out.</p>
+                    <img class="testimonials__quote testimonials__quote--right" src="./assets/quote.png" alt="quotes">
                     <span class="testimonials__witness">Edd.C</span>
                 </div>
                 <div class="testimonials__card">
+                    <img class="testimonials__quote" src="./assets/quote.png" alt="quotes">
                     <p class="testimonials__p">One of the best parts of Ignition is its customer service. You can chat with someone in real time, and they are super helpful.</p>
+                    <img class="testimonials__quote testimonials__quote--right" src="./assets/quote.png" alt="quotes">
                     <span class="testimonials__witness">Paulos.S</span>
                 </div>
             </div>
@@ -162,10 +205,22 @@
     <footer class="footer">
             <div class="footer__container">
                 <ul class="footer__sponsors">
-                    <li class="footer__sponsor"><img src="./assets/trusted-experience.png" alt="Trusted Experience logo"></li>
-                    <li class="footer__sponsor"><img src="./assets/bitcoin.png" alt="Bitcoin logo"><img src="./assets/bitcoin-cash.png" alt="Bitcoin cash logo"><img src="./assets/litecoin.png" alt="Litecoin logo"><img src="./assets/ethereum.png" alt="Etherium logo"><img src="./assets/tether.png" alt="Tether logo"></li>
-                    <li class="footer__sponsor"><img src="./assets/visa.png" alt="Visa logo"><img src="./assets/maestro.png" alt="Maestro logo"><img src="./assets/secure-icon.png" alt="Secure logo"></li>
-                    <li class="footer__sponsor"><img src="./assets/ft_18.png" alt="18+ logo"><img src="./assets/ft_ga.png" alt="GA logo"></li>
+                    <li class="footer__sponsor"><img class="footer__trusted" src="./assets/trusted-experience.png" alt="Trusted Experience logo"></li>
+                    <li class="footer__sponsor">
+                        <img class="footer__crypto" src="./assets/bitcoin.png" alt="Bitcoin logo">
+                        <img class="footer__crypto" src="./assets/bitcoin-cash.png" alt="Bitcoin cash logo"><img class="footer__crypto" src="./assets/litecoin.png" alt="Litecoin logo">
+                        <img class="footer__crypto" src="./assets/ethereum.png" alt="Etherium logo">
+                        <img class="footer__crypto" src="./assets/tether.png" alt="Tether logo">
+                    </li>
+                    <li class="footer__sponsor">
+                        <img class="footer__bank" src="./assets/visa.png" alt="Visa logo">
+                        <img class="footer__bank" src="./assets/maestro.png" alt="Maestro logo">
+                        <img class="footer__bank" src="./assets/secure-icon.png" alt="Secure logo">
+                    </li>
+                    <li class="footer__sponsor footer__sponsor--last">
+                        <img class="footer__img" src="./assets/ft_18.png" alt="18+ logo">
+                        <img class="footer__img" src="./assets/ft_ga.png" alt="GA logo">
+                    </li>
                 </ul>
             </div>
             <div class="footer__container">
@@ -181,7 +236,7 @@
                     <li class="footer__li"><a class="footer__a">Privacy Policy</a></li>
                 </ul>
             </div>
-        <div class="ribbon"><button class="ribbon__button">Join Instantly</button><span class="ribbon__span">Claim your welcome bonus and start winning!</span></div>
+        <div class="ribbon"><button class="ribbon__button"><div class="ribbon__stretch">Join Instantly</div></button><span class="ribbon__span">Claim your welcome bonus and start winning!</span></div>
     </footer>    
 </body>
 </html>
