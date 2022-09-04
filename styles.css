@@ -163,6 +163,16 @@ body {
 .footer__li {
   list-style: none;
 }
+.footer__logo--instagram {
+  position: absolute;
+  margin-left: 50px;
+  bottom: -1900px;
+}
+.footer__logo--twitter {
+  position: absolute;
+  margin-left: 15px;
+  bottom: -1893px;
+}
 .footer__p {
   font-family: rubik, sans-serif;
 }

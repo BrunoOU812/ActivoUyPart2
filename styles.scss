@@ -154,8 +154,14 @@ body{
   }
   &__logo {
     &--instagram {
+      position: absolute;
+      margin-left: 50px;
+      bottom: -1900px;
     }
     &--twitter {
+      position: absolute;
+      margin-left: 15px;
+      bottom: -1893px;
     }
   }
   &__p {
