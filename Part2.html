@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <title>Ignition Casino</title>
 </head>
+<header>
+</header>
 <body>
     <header class="header">
         <div class="header__logo"><img class="header__img" src="./assets/logo.svg" alt="Ignition casino logo"><div class="header__brand"><strong>Ignition</strong><small>Casino</small></div></div>
@@ -69,66 +71,70 @@
             <div class="features__box"><img class="features__img" src="./assets/players.png" alt="elemental profile person logo"><span class="features__span"><strong>10.000</strong></span><span>Players Daily</span></div>
         </section>
     
-        <section class="games" id="casino">
-            <h1 class="games__h1">Casino Games</h1>
-            <p class="games__description">Over 250 Games Available</p>
-            <div class="games__container">
-                <h3 class="games__h3">Top Slots</h3>
-                <div class="games__cards">
-                    <div class="games__card"><img src="./assets/reels-and-wheels.jpeg" alt="Roulette with red background"><span>Reels & Wheels</span></div>
-                    <div class="games__card"><img src="./assets/mystic-wilds.jpeg" alt="Fountain image"><span>Mystic Wilds</span></div>
-                    <div class="games__card"><img src="./assets/fast-and-sexy.jpeg" alt="Group of women happy in cartoon style"><span>Fast & Sexy</span></div>
-                </div>
-                <button class="games__button">View More</button>
+        <section class="games games--casino" id="casino">
+            <div class="games__title">
+                <h1 class="games__h1">Casino Games</h1>
+                <p class="games__description">Over 250 Games Available</p>
             </div>
             <div class="games__container">
-                <h3 class="games__h3">Live Casino</h3>
+                <h3 class="games__h3 games__h3--purple">Top Slots</h3>
                 <div class="games__cards">
-                    <div class="games__card"><img src="./assets/live-blackjack.jpeg" alt="Female croupier with flames around"><span>Live Backjack</span></div>
-                    <div class="games__card"><img src="./assets/live-roulette.jpeg" alt="Male croupier with flames around and roulette in the background"><span>Live Roulette</span></div>
-                    <div class="games__card"><img src="./assets/live-baccarat.jpeg" alt="Male croupier with flames around and casino tokens on a table"><span>Live Baccarat</span></div>
+                    <div class="games__card games__card--purple"><img class="games__img" src="./assets/reels-and-wheels.jpeg" alt="Roulette with red background"><span class="games__span">Reels & Wheels</span></div>
+                    <div class="games__card games__card--purple"><img class="games__img" src="./assets/mystic-wilds.jpeg" alt="Fountain image"><span class="games__span">Mystic Wilds</span></div>
+                    <div class="games__card games__card--purple"><img class="games__img" src="./assets/fast-and-sexy.jpeg" alt="Group of women happy in cartoon style"><span class="games__span">Fast & Sexy</span></div>
                 </div>
-                <button class="games__button">View More</button>
+                <button class="games__button games__button--purple">View More</button>
+            </div>
+            <div class="games__container games__container--black">
+                <h3 class="games__h3 games__h3--yellow">Live Casino</h3>
+                <div class="games__cards  games__cards--cutted">
+                    <div class="games__card games__card--yellow"><img class="games__img" src="./assets/live-blackjack.jpeg" alt="Female croupier with flames around"><span class="games__span">Live Backjack</span></div>
+                    <div class="games__card games__card--yellow"><img class="games__img" src="./assets/live-roulette.jpeg" alt="Male croupier with flames around and roulette in the background"><span class="games__span">Live Roulette</span></div>
+                    <div class="games__card games__card--yellow"><img class="games__img" src="./assets/live-baccarat.jpeg" alt="Male croupier with flames around and casino tokens on a table"><span class="games__span">Live Baccarat</span></div>
+                </div>
+                <button class="games__button games__button--yellow">View More</button>
             </div>
             <div class="games__container">
-                <h3 class="games__h3">Most Popular Games</h3>
+                <h3 class="games__h3 games__h3--orange">Most Popular Games</h3>
                 <div class="games__cards">
-                    <div class="games__card"><img src="./assets/777-deluxe.jpeg" alt="777 deluxe logo"><span>777 Deluxe</span></div>
-                    <div class="games__card"><img src="./assets/golden-buffalo.jpeg" alt="Bunch of golden buffalos"><span>Golden Buffalo</span></div>
-                    <div class="games__card"><img src="./assets/a-night-with-cleo.jpeg" alt="Cleopatra welcoming you"><span>The New Blackjack</span></div>
+                    <div class="games__card games__card--orange"><img class="games__img" src="./assets/777-deluxe.jpeg" alt="777 deluxe logo"><span class="games__span">777 Deluxe</span></div>
+                    <div class="games__card games__card--orange"><img class="games__img" src="./assets/golden-buffalo.jpeg" alt="Bunch of golden buffalos"><span class="games__span">Golden Buffalo</span></div>
+                    <div class="games__card games__card--orange"><img class="games__img" src="./assets/a-night-with-cleo.jpeg" alt="Cleopatra welcoming you"><span class="games__span">The New Blackjack</span></div>
                 </div>
-                <button class="games__button">View More</button>
+                <button class="games__button games__button--orange">View More</button>
             </div>
         </section>
-        <section class="games" id="poker">
-            <h1 class="games__h1">Poker Games</h1>
-            <p class="games__p">Hit the felt 24/7</p>
-            <div class="games__container">
-                <h3 class="games__h3">Game Types</h3>
-                <div class="games__cards">
-                    <div class="games__card"><img src="./assets/cash-games.jpeg" alt="Bunch of dollar bills and casino tokens"><span> Games</span></div>
-                    <div class="games__card"><img src="./assets/zone-poker.jpeg" alt="Car plate with zone poker title with unfolded poker cards behind"><span>Zone Poker</span></div>
-                    <div class="games__card"><img src="./assets/jackpot-sit-and-go.jpeg" alt="Poker table seen from the top with jackpot display covering the top of the table"><span>Jackpot Sit & Go</span></div>
-                </div>
-                <button class="games__button">View More</button>
+        <section class="games games--poker" id="poker">
+            <div class="games__title">
+                <h1 class="games__h1">Poker Games</h1>
+                <p class="games__description">Hit the felt 24/7</p>
             </div>
             <div class="games__container">
-                <h3 class="games__h3">Featured Promotions</h3>
+                <h3 class="games__h3 games__h3--red">Game Types</h3>
                 <div class="games__cards">
-                    <div class="games__card"><img src="./assets/crypto-depositors-freeroll.jpeg" alt="V.I.P. spot on the poker table"><span>Crypto Depositior´s Freeroll</span></div>
-                    <div class="games__card"><img src="./assets/monthly-milly-tournaments.jpeg" alt="Flame circle with yellow and blue tint on top and bottom half respectively with hooded man behind throwing cards at you"><span>150K GTD Sunday</span></div>
-                    <div class="games__card"><img src="./assets/mad-mondays-tournaments.jpeg" alt=""><span>Mad Monday Tournaments</span></div>
+                    <div class="games__card games__card--red"><img class="games__img" src="./assets/cash-games.jpeg" alt="Bunch of dollar bills and casino tokens"><span class="games__span"> Games</span></div>
+                    <div class="games__card games__card--red"><img class="games__img" src="./assets/zone-poker.jpeg" alt="Car plate with zone poker title with unfolded poker cards behind"><span class="games__span">Zone Poker</span></div>
+                    <div class="games__card games__card--red"><img class="games__img" src="./assets/jackpot-sit-and-go.jpeg" alt="Poker table seen from the top with jackpot display covering the top of the table"><span class="games__span">Jackpot Sit & Go</span></div>
                 </div>
-                <button class="games__button">View More</button>
+                <button class="games__button games__button--red">View More</button>
+            </div>
+            <div class="games__container games__container--black">
+                <h3 class="games__h3 games__h3--green">Featured Promotions</h3>
+                <div class="games__cards games__cards--cutted">
+                    <div class="games__card games__card--green"><img class="games__img" src="./assets/crypto-depositors-freeroll.jpeg" alt="V.I.P. spot on the poker table"><span class="games__span">Crypto Depositior´s Freeroll</span></div>
+                    <div class="games__card games__card--green"><img class="games__img" src="./assets/monthly-milly-tournaments.jpeg" alt="Flame circle with yellow and blue tint on top and bottom half respectively with hooded man behind throwing cards at you"><span class="games__span">150K GTD Sunday</span></div>
+                    <div class="games__card games__card--green"><img class="games__img" src="./assets/mad-mondays-tournaments.jpeg" alt=""><span class="games__span">Mad Monday Tournaments</span></div>
+                </div>
+                <button class="games__button games__button--green">View More</button>
             </div>
             <div class="games__container">
-                <h3 class="games__h3">Recurring Tournament Series</h3>
+                <h3 class="games__h3 games__h3--blue">Recurring Tournament Series</h3>
                 <div class="games__cards">
-                    <div class="games__card"><img src="./assets/crypto-poker-open.jpeg" alt="Casino token with central bitcoin logo with two unfolded poker cards behind"><span>Crypto Open Poker</span></div>
-                    <div class="games__card"><img src="./assets/black-diamond-poker-open.jpeg" alt="Casino Token with black diamond logo"><span>11th Black Diamond Poker</span></div>
-                    <div class="games__card"><img src="./assets/super-millions-poker-open.jpeg" alt="Casino token with super millions logo"><span>Super Millions Poker</span></div>
+                    <div class="games__card games__card--blue"><img class="games__img" src="./assets/crypto-poker-open.jpeg" alt="Casino token with central bitcoin logo with two unfolded poker cards behind"><span class="games__span">Crypto Open Poker</span></div>
+                    <div class="games__card games__card--blue"><img class="games__img" src="./assets/black-diamond-poker-open.jpeg" alt="Casino Token with black diamond logo"><span class="games__span">11th Black Diamond Poker</span></div>
+                    <div class="games__card games__card--blue"><img class="games__img" src="./assets/super-millions-poker-open.jpeg" alt="Casino token with super millions logo"><span class="games__span">Super Millions Poker</span></div>
                 </div>
-                <button class="games__button">View More</button>
+                <button class="games__button games__button--blue">View More</button>
             </div>
         </section>
         <section class="testimonials">

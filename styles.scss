@@ -1,0 +1,234 @@
+@import url("https://use.typekit.net/rsw3bla.css");
+@import url('http://fonts.cdnfonts.com/css/saira');
+
+$base-color:#333;
+$brand-color:#ff6801;
+$black-color:#1a1a1a;
+$rubik:rubik, sans-serif;
+$saira:'Saira', sans-serif;
+$colors:(
+        purple:#6a37e5,
+        yellow:#effd5e,
+        orange:#e0773e,
+        red:#c82f2e,
+        green:#6ee3a5,
+        blue:#0d49f5
+            );
+$radius:10px;
+body{
+    color: white;
+    background-color: $base-color;
+    font-family: $saira;
+}
+.banner {
+    grid-column: 2/4;
+  &__action {
+  }
+  &__button {
+    &--big {
+    }
+    &--nobg { 
+    }
+  }
+  &__container {
+  }
+  &__h1 {
+  }
+  &__h2 {
+  }
+  &__img {
+  }
+  &__info {
+    &--main {
+    }
+  }
+  &__p {
+  }
+}
+.features {
+    grid-column: 2/4;
+    &__box {
+  }
+  &__img {
+  }
+  &__span {
+  }
+}
+.footer {
+  &__a {
+  }
+  &__container {
+  }
+  &__h4 {
+  }
+  &__li {
+  }
+  &__logo {
+    &--instagram {
+    }
+    &--twitter {
+    }
+  }
+  &__p {
+  }
+  &__sponsor {
+  }
+  &__sponsors {
+  }
+  &__ul {
+  }
+}
+.games {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: $rubik;
+    text-transform: uppercase;
+    background-color: $black-color;
+    height: 1430px;
+    padding: 40px 16px 60px 16px;
+    border-radius: $radius;
+  &--casino{grid-column: 2/3;}
+  &--poker{grid-column: 3/4;}
+  &__button {
+    width: 185px;
+    height: 44px;
+    background-color: transparent;
+    border-radius: $radius;
+    line-height: 40px;
+    align-self: center;
+    font-size: 1.1em;
+    font-family: $rubik;
+    text-transform: uppercase;
+    color: white;
+    @each $key, $color in $colors{
+        &--#{$key}{border: 2px solid $color;}
+    }    
+  }
+  &__card {
+    @each $key, $color in $colors{
+        &--#{$key}{background-color: $color;}
+    }
+    min-height: 248px;
+    min-width: 226px;
+    max-height: 248px;
+    max-width: 226px;
+    overflow: hidden;
+    border-radius: $radius;
+  }
+  &__cards {
+    display:flex;
+    justify-content: space-between;
+    margin-top:-20px;
+    &--cutted{
+        height:230px;
+        overflow: hidden;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 387px;
+    &--black{color:$black-color}
+  }
+  &__description {
+    padding: 0;
+    font-size: 22px;
+    color: $brand-color;
+    text-align: center;
+    margin:0;
+  }
+  &__h1 {
+    font-size: 50px;
+    font-family: $saira;
+    text-align: center;
+    transform: scaleX(70%);
+    margin:0;
+  }
+  &__h3 {
+    border-radius: $radius;
+    border: 1px solid white;
+    height: 44px;
+    margin-top: 0;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 45px;
+    @each $key, $color in $colors{
+        &--#{$key}{background-color: $color;}
+    }
+  }
+  &__img{
+    max-height: 165px;
+    min-width: 226px;
+    object-position: center;
+    object-fit: cover;
+  }
+  &__span{
+    display: block;
+    text-align: center;
+    line-height: 75px;
+    min-width: 226px;
+    min-height: 86px;
+  }
+  &__title{
+    display: block;
+    max-height:66px;
+    padding: 0;
+    margin: 0;
+  }
+}
+.header {
+  &__brand {
+  }
+  &__button {
+    &--join {
+    }
+    &--login {
+    }
+  }
+  &__img {
+  }
+  &__li {
+  }
+  &__link {
+  }
+  &__logo {
+  }
+  &__nav {
+  }
+}
+.info {
+    display: flex;
+    grid-column: 2/4;
+  &__button {
+  }
+  &__container {
+  }
+  &__h4 {
+  }
+}
+.main {
+    display: grid;
+    grid-template-columns: auto 735px 735px auto;
+    grid-column-gap:20px;
+}
+.ribbon {
+  &__button {
+  }
+  &__span {
+  }
+}
+.testimonials {
+    grid-column: 2/4;
+    &__card {
+  }
+  &__cards {
+  }
+  &__h2 {
+  }
+  &__p {
+  }
+  &__witness {
+  }
+}

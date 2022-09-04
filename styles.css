@@ -1,0 +1,218 @@
+@import url("https://use.typekit.net/rsw3bla.css");
+@import url("http://fonts.cdnfonts.com/css/saira");
+body {
+  color: white;
+  background-color: #333;
+  font-family: "Saira", sans-serif;
+}
+
+.banner {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+.features {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+.games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: rubik, sans-serif;
+  text-transform: uppercase;
+  background-color: #1a1a1a;
+  height: 1430px;
+  padding: 40px 16px 60px 16px;
+  border-radius: 10px;
+}
+.games--casino {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+.games--poker {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+.games__button {
+  width: 185px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 10px;
+  line-height: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.1em;
+  font-family: rubik, sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+.games__button--purple {
+  border: 2px solid #6a37e5;
+}
+.games__button--yellow {
+  border: 2px solid #effd5e;
+}
+.games__button--orange {
+  border: 2px solid #e0773e;
+}
+.games__button--red {
+  border: 2px solid #c82f2e;
+}
+.games__button--green {
+  border: 2px solid #6ee3a5;
+}
+.games__button--blue {
+  border: 2px solid #0d49f5;
+}
+.games__card {
+  min-height: 248px;
+  min-width: 226px;
+  max-height: 248px;
+  max-width: 226px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.games__card--purple {
+  background-color: #6a37e5;
+}
+.games__card--yellow {
+  background-color: #effd5e;
+}
+.games__card--orange {
+  background-color: #e0773e;
+}
+.games__card--red {
+  background-color: #c82f2e;
+}
+.games__card--green {
+  background-color: #6ee3a5;
+}
+.games__card--blue {
+  background-color: #0d49f5;
+}
+.games__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -20px;
+}
+.games__cards--cutted {
+  height: 230px;
+  overflow: hidden;
+}
+.games__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 387px;
+}
+.games__container--black {
+  color: #1a1a1a;
+}
+.games__description {
+  padding: 0;
+  font-size: 22px;
+  color: #ff6801;
+  text-align: center;
+  margin: 0;
+}
+.games__h1 {
+  font-size: 50px;
+  font-family: "Saira", sans-serif;
+  text-align: center;
+  -webkit-transform: scaleX(70%);
+          transform: scaleX(70%);
+  margin: 0;
+}
+.games__h3 {
+  border-radius: 10px;
+  border: 1px solid white;
+  height: 44px;
+  margin-top: 0;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 45px;
+}
+.games__h3--purple {
+  background-color: #6a37e5;
+}
+.games__h3--yellow {
+  background-color: #effd5e;
+}
+.games__h3--orange {
+  background-color: #e0773e;
+}
+.games__h3--red {
+  background-color: #c82f2e;
+}
+.games__h3--green {
+  background-color: #6ee3a5;
+}
+.games__h3--blue {
+  background-color: #0d49f5;
+}
+.games__img {
+  max-height: 165px;
+  min-width: 226px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.games__span {
+  display: block;
+  text-align: center;
+  line-height: 75px;
+  min-width: 226px;
+  min-height: 86px;
+}
+.games__title {
+  display: block;
+  max-height: 66px;
+  padding: 0;
+  margin: 0;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 20px 735px 20px 735px 20px auto;
+  grid-template-columns: auto 735px 735px auto;
+  grid-column-gap: 20px;
+}
+
+.testimonials {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
