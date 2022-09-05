@@ -991,6 +991,11 @@ button {
           align-items: stretch;
   margin-top: -20px;
 }
+@media screen and (max-width: 1600px) {
+  .games__cards {
+    max-width: 470px;
+  }
+}
 @media screen and (max-width: 760px) {
   .games__cards {
     max-width: 230px;
@@ -1159,12 +1164,7 @@ button {
 }
 @media screen and (max-width: 1200px) {
   .header__button {
-    height: 3vw;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .header__button {
-    height: 5vw;
+    height: 4vw;
   }
 }
 .header__button--join {

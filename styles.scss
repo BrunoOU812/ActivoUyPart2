@@ -384,6 +384,9 @@ button{
     overflow-x: hidden;
     @include flex($justify: space-between);
     margin-top:-20px;
+    @include responsive($xxl){
+      max-width: 470px;
+    }
     @include responsive($medium){
       max-width: 230px;
     }
@@ -479,10 +482,7 @@ button{
     height: 38px;
     background-color: $brand-color;
     @include responsive($extra){
-      height: 3vw;
-    }   
-    @include responsive($extra){
-      height: 5vw;
+      height: 4vw;
     }
     &--join {
     width: 86px;
