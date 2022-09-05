@@ -150,8 +150,8 @@
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 3;
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
   background-color: #1a1a1a;
   border-radius: 17.5px;
   border: 2px solid rgba(200, 200, 200, 0.5);
@@ -177,8 +177,8 @@
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 3;
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
   background-color: #1a1a1a;
   border-radius: 17.5px;
   border: 2px solid rgba(200, 200, 200, 0.5);
@@ -204,8 +204,8 @@
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 3;
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
   background-color: #1a1a1a;
   border-radius: 17.5px;
   border: 2px solid rgba(200, 200, 200, 0.5);
@@ -231,8 +231,8 @@
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 3;
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
   background-color: #1a1a1a;
   border-radius: 17.5px;
   border: 2px solid rgba(200, 200, 200, 0.5);
@@ -258,8 +258,8 @@
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 3;
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
   background-color: #1a1a1a;
   border-radius: 17.5px;
   border: 2px solid rgba(200, 200, 200, 0.5);
@@ -285,8 +285,8 @@
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 3;
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
   background-color: #1a1a1a;
   border-radius: 17.5px;
   border: 2px solid rgba(200, 200, 200, 0.5);
@@ -312,8 +312,8 @@
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 3;
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
   background-color: #1a1a1a;
   border-radius: 17.5px;
   border: 2px solid rgba(200, 200, 200, 0.5);
@@ -339,8 +339,8 @@
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 3;
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
   background-color: #1a1a1a;
   border-radius: 17.5px;
   border: 2px solid rgba(200, 200, 200, 0.5);
