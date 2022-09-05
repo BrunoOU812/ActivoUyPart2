@@ -46,7 +46,7 @@ $toggle-classes: ("info","purple", "yellow", "orange", "red", "green", "blue","t
 
 
 @mixin toggleButton{
-  visibility: hidden;
+  // visibility: hidden;
   display: inline;
     align-self: center;
     z-index: 3;
@@ -71,6 +71,15 @@ $toggle-classes: ("info","purple", "yellow", "orange", "red", "green", "blue","t
     }
 }
 
+@mixin slider{
+  @include flex($align:center,$justify:space-between);
+}
+
+@each $value in $toggle-classes{
+  .#{$value}__slider {
+ @include slider;
+}
+}    
 @each $value in $toggle-classes{
   .#{$value}__toggle {
  @include toggleButton;
@@ -448,7 +457,7 @@ body{
   }
 }
 .info {
-  grid-column: 2/4;
+  width: 100vw;
   margin-top: calc(420px + 30px);
   margin-bottom: 30px;
   overflow-x: hidden;
@@ -461,6 +470,9 @@ body{
     border: 2px solid white;
     color: white;
     text-transform: uppercase;
+  }
+  &__containers{
+    display: flex;
   }
   &__container {
     @include flex($direction: column, $justify: space-between, $align: center);
@@ -479,7 +491,8 @@ body{
 }
 .main {
     display: grid;
-    grid-template-columns: 190px 1fr 1fr 190px;
+    // grid-template-columns: calc(10vw - 20px) calc(40vw - 20px) calc(40vw - 20px) calc(10vw - 20px);
+    grid-template-columns:10% 40% 40% 10%;
     grid-column-gap:20px;
 }
 .ribbon {

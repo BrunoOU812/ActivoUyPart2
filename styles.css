@@ -1,7 +1,150 @@
 @import url("https://use.typekit.net/rsw3bla.css");
 @import url("http://fonts.cdnfonts.com/css/saira");
+.info__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.purple__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.yellow__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.orange__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.red__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.green__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blue__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .info__toggle {
-  visibility: hidden;
   display: inline;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -29,7 +172,6 @@
 }
 
 .purple__toggle {
-  visibility: hidden;
   display: inline;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -57,7 +199,6 @@
 }
 
 .yellow__toggle {
-  visibility: hidden;
   display: inline;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -85,7 +226,6 @@
 }
 
 .orange__toggle {
-  visibility: hidden;
   display: inline;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -113,7 +253,6 @@
 }
 
 .red__toggle {
-  visibility: hidden;
   display: inline;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -141,7 +280,6 @@
 }
 
 .green__toggle {
-  visibility: hidden;
   display: inline;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -169,7 +307,6 @@
 }
 
 .blue__toggle {
-  visibility: hidden;
   display: inline;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -197,7 +334,6 @@
 }
 
 .testimonial__toggle {
-  visibility: hidden;
   display: inline;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -848,9 +984,7 @@ body {
 }
 
 .info {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
+  width: 100vw;
   margin-top: 450px;
   margin-bottom: 30px;
   overflow-x: hidden;
@@ -878,6 +1012,11 @@ body {
   border: 2px solid white;
   color: white;
   text-transform: uppercase;
+}
+.info__containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .info__container {
   display: -webkit-box;
@@ -915,8 +1054,8 @@ body {
 .main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 190px 20px 1fr 20px 1fr 20px 190px;
-  grid-template-columns: 190px 1fr 1fr 190px;
+  -ms-grid-columns: 10% 20px 40% 20px 40% 20px 10%;
+  grid-template-columns: 10% 40% 40% 10%;
   grid-column-gap: 20px;
 }
 

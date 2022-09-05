@@ -10,33 +10,45 @@ const btnArray=(style)=>{
     nextBtn.classList.add(`${style}__toggle`,`${style}__toggle--next`);
     return [prevBtn,nextBtn];
 }
+const slider=(style)=>{
+    style=extractWord(style);
+    const container= document.createElement("div");
+    container.classList.add(`${style}__slider`);
+    return container;
+}
 
 const toggle= (pointer)=>{
+    const slide=slider(pointer);
     const parent = document.querySelector(pointer);
+    const grand=parent.parentNode;
+    grand.prepend(slide);
+    console.log("grand",grand);
     const elements=parent.querySelectorAll(':scope > div');
     const btn=btnArray(pointer);
-    parent.prepend(btn[0]);
-    parent.appendChild(btn[1])
+    slide.prepend(btn[0]);
+    elements.forEach(item=>parent.appendChild(item))
+    slide.appendChild(parent);
+    slide.appendChild(btn[1]);
     const array=[...elements];
     const next = ()=>{
         const last=array.pop();
         array.unshift(last);
         elements.forEach(item=>{item.remove();})
         array.forEach(item=>parent.appendChild(item));
-        parent.appendChild(btn[1]);
+        slide.appendChild(btn[1]);
     }
     const previous = ()=>{
         const last=array.shift();
         array.push(last);
         elements.forEach(item=>{item.remove();})
         array.forEach(item=>parent.appendChild(item))
-        parent.appendChild(btn[1]);
+        slide.appendChild(btn[1]);
     }
     const nameClass=extractWord(pointer);
     document.querySelector(`.${nameClass}__toggle--next`).addEventListener("click",next);
     document.querySelector(`.${nameClass}__toggle--previous`).addEventListener("click",previous);
 }
 
-const toggleClasses= [".info","#purple", "#yellow", "#orange", "#red", "#green", "#blue","#testimonial"];
+const toggleClasses= ["#info","#purple", "#yellow", "#orange", "#red", "#green", "#blue","#testimonial"];
 
 toggleClasses.forEach(item=>toggle(item));
