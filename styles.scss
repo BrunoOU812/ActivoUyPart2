@@ -16,6 +16,37 @@ $colors:(
             );
 $radius:10px;
 $toggle-size:35px;
+$toggle-classes: ("info","purple", "yellow", "orange", "red", "green", "blue","testimonial");
+@mixin toggleButton{
+  display: inline;
+    align-self: center;
+    z-index: 3;
+    width: $toggle-size;
+    height: $toggle-size;
+    background-color: $black-color;
+    border-radius: calc($toggle-size/2);
+    border: 2px solid rgba(200,200,200,0.5);
+    &--previous{
+      margin-right:calc(($toggle-size ) * -1);
+    &:before {
+      color: rgba(200,200,200,0.5) ;
+      content: "<";
+    }
+    }
+    &--next{
+      margin-left:calc(($toggle-size ) * -1);
+    &:before {
+      color: rgba(200,200,200,0.5) ;
+      content: ">";
+    }
+    }
+}
+
+@each $value in $toggle-classes{
+  .#{$value}__toggle {
+ @include toggleButton;
+}
+}    
 *{
   margin:0;
   padding:0;
@@ -400,29 +431,8 @@ body{
     margin:0 5px;
   }
   &__toggle{    
-    display: inline;
-    align-self: center;
-    z-index: 3;
-    width: $toggle-size;
-    height: $toggle-size;
-    background-color: $black-color;
-    border-radius: calc($toggle-size/2);
-    border: 2px solid rgba(200,200,200,0.5);
-    &--previous{
-      margin-right:calc(($toggle-size ) * -1);
-    &:before {
-      color: rgba(200,200,200,0.5) ;
-      content: "<";
-    }
-    }
-    &--next{
-      margin-left:calc(($toggle-size ) * -1);
-    &:before {
-      color: rgba(200,200,200,0.5) ;
-      content: ">";
-    }
-
-    }
+    @include toggleButton;
+    
   }
   &__h4 {
     font-size: 30px;
