@@ -17,7 +17,25 @@ $colors:(
 $radius:10px;
 $toggle-size:35px;
 $toggle-classes: ("info","purple", "yellow", "orange", "red", "green", "blue","testimonial");
+
+@mixin flex($direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+  @mixin font($size:30px,$weight:400,$align: left,$height:1.5){
+  font-size:$size ;
+  font-weight:$weight ;
+  text-align:$align ;
+  line-height:$height ;
+}
+
+
 @mixin toggleButton{
+  visibility: hidden;
   display: inline;
     align-self: center;
     z-index: 3;
@@ -47,6 +65,7 @@ $toggle-classes: ("info","purple", "yellow", "orange", "red", "green", "blue","t
  @include toggleButton;
 }
 }    
+
 *{
   margin:0;
   padding:0;
@@ -63,9 +82,7 @@ body{
     grid-column: 1/5;
 
   &__action {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex($direction:column, $justify: space-between);
     position: absolute;
     top:150px;
     left:300px;
@@ -91,9 +108,7 @@ body{
         width:172px;
         height: 38px;
         border: 2px solid $brand-color;
-        line-height: 38px;
-        font-size: 20px;
-        font-weight: 400;
+        @include font($size:20px,$align:center,$height:38px);
         font-family: $rubik;
         background-color: transparent;
         border-radius: $radius;
@@ -104,8 +119,7 @@ body{
   &__h1 {
     text-align: justify;
     transform: scaleX(70%);
-    font-size: 45px;
-    line-height: 45px;
+    @include font($size:45px,$weight:bold,$align: center,$height:45px); 
     text-transform: uppercase;
     margin:0 -55px;
   }
@@ -120,10 +134,7 @@ body{
     width: 1980px;
   }
   &__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+    @include flex($direction: column,$justify: space-between, $align: flex-end);
     position: absolute;
     top:150px;
     right:300px;
@@ -154,9 +165,8 @@ body{
   }
 }
 .footer {
-  display: flex;
+  @include flex( $justify: space-around);
   width: 100%;
-  justify-content: space-around;
   padding: 30px 260px 0 260px;
   height: 427px;
   background-color: white;
@@ -199,10 +209,8 @@ body{
     font-family: $rubik;
   }
   &__sponsor {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  @include flex( $justify: space-around, $align: center);
+  list-style: none;
     height:55px;
     &--last{
       padding: 0 80px;
@@ -219,9 +227,7 @@ body{
 }
 .games {
     margin: 30px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex($direction: column, $justify: space-between);
     font-family: $rubik;
     text-transform: uppercase;
     background-color: $black-color;
@@ -235,9 +241,8 @@ body{
     height: 44px;
     background-color: transparent;
     border-radius: $radius;
-    line-height: 40px;
+    @include font($size:1.1em,$weight:400,$align: center,$height:45px);
     align-self: center;
-    font-size: 1.1em;
     font-family: $rubik;
     text-transform: uppercase;
     color: white;
@@ -260,8 +265,7 @@ body{
   &__cards {
     max-width: 700px;
     overflow-x: hidden;
-    display:flex;
-    justify-content: space-between;
+    @include flex($justify: space-between);
     margin-top:-20px;
     &--cutted{
         height:230px;
@@ -269,26 +273,21 @@ body{
     }
   }
   &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex($direction: column, $justify:space-between);
     height: 387px;
     &--black{color:$black-color}
   }
   &__description {
+    @include font($size:22px,$align: center);
     padding: 0;
-    font-size: 22px;
     color: $brand-color;
-    text-align: center;
     margin:0;
   }
   &__h1 {
-    font-size: 50px;
+    @include font($size:50px,$weight:bold,$align: center,$height:40px);
     font-family: $saira;
-    text-align: center;
     transform: scaleX(70%);
     height: 40px;
-    line-height: 40px;
     margin:0 0 15px 0;
     padding: 0;
   }
@@ -297,9 +296,7 @@ body{
     border: 1px solid white;
     height: 44px;
     margin-top: 0;
-    font-weight: lighter;
-    text-align: center;
-    line-height: 45px;
+    @include font($size:20px,$align: center,$height:45px);
     @each $key, $color in $colors{
         &--#{$key}{background-color: $color;}
     }
@@ -365,9 +362,7 @@ body{
     }
   }  
   &__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex($justify: space-between, $align: center);
     grid-column:2/4;
   }
   &__group{
@@ -381,8 +376,7 @@ body{
     list-style:none;
   }
   &__link {
-    font-size: 20px;
-    font-weight: bold;
+    @include font($size:20px,$weight:bold);
     color: white;
     text-decoration: none;
     font-family: $saira;
@@ -397,17 +391,14 @@ body{
   }
   &__ul{
     width: 623px;
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
+    @include flex($justify: space-between, $align: center);
     padding:0;
   }
 }
 .info {
   overflow-x: hidden;
   margin: 30px 0;
-  display: flex;
-  justify-content: space-between;
+    @include flex($justify: space-between);
     grid-column: 2/4;
   &__button {
     width: 161px;
@@ -419,10 +410,7 @@ body{
     text-transform: uppercase;
   }
   &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    @include flex($direction: column, $justify: space-between, $align: center);
     border-radius: $radius;
     padding: 30px;
     background-color: $black-color;
@@ -430,14 +418,8 @@ body{
     height: 169px;
     margin:0 5px;
   }
-  &__toggle{    
-    @include toggleButton;
-    
-  }
   &__h4 {
-    font-size: 30px;
-    text-align: center;
-    line-height: 30px;
+    @include font($align: center,$weight:bold,$height:30px);
     text-transform: uppercase;
     transform: scaleX(70%);
   }
@@ -449,9 +431,7 @@ body{
     grid-column-gap:20px;
 }
 .ribbon {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex($justify: space-between, $align: center);
   margin-top:calc(349px - 30px);
   left:0;
   width: 100%;
@@ -465,8 +445,7 @@ body{
     width:172px;
     height: 38px;
     border: 3px solid white;
-    font-size: 20px;
-    font-weight: bold;
+    @include font($size:20px,$weight:bold,$align: left,$height:1.5);
     font-family: $saira;
     background-color: transparent;
     border-radius: $radius;
@@ -492,9 +471,7 @@ body{
       color: white;
   }
   &__cards {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex( $justify: space-between, $align: center);
     font-family: $rubik;
     font-size: 20px;
   }
