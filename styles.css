@@ -991,6 +991,11 @@ button {
           align-items: stretch;
   margin-top: -20px;
 }
+@media screen and (max-width: 480px) {
+  .games__cards {
+    max-width: 230px;
+  }
+}
 .games__cards--cutted {
   height: 230px;
   overflow: hidden;

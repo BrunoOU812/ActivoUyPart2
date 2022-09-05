@@ -384,6 +384,9 @@ button{
     overflow-x: hidden;
     @include flex($justify: space-between);
     margin-top:-20px;
+    @include responsive($small){
+      max-width: 230px;
+    }
     &--cutted{
         height:230px;
         overflow: hidden;
