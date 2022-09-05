@@ -65,7 +65,7 @@ $toggle-classes: ("info","purple", "yellow", "orange", "red", "green", "blue","t
     @include responsive($large){
       opacity: 1;
     }
-    &:hover,&:focus{
+    &:hover,&:focus,&:active{
       opacity: 1;
     }
     &--previous{
@@ -149,7 +149,7 @@ button{
         color: white;
         background-color: $brand-color;
         border: 2px solid white;
-        &:hover,&:focus{
+        &:hover,&:focus,&:active{
           border:  none;
         }
     }
@@ -158,7 +158,7 @@ button{
         width:172px;
         height: 38px;
         border: 2px solid $brand-color;
-        &:hover,&:focus{
+        &:hover,&:focus,&:active{
           color:  white;
           background-color: $brand-color;
         }
@@ -251,10 +251,14 @@ button{
 .footer {
   @include flex( $justify: space-around);
   width: 100%;
-  padding: 30px 260px 0 260px;
+  padding: 30px 10vw 0 10vw;
   height: 427px;
   background-color: white;
   color: $black-color;
+  @include responsive($extra){
+
+  padding: 30px 5px 0 5px;
+  }
   &__a {
   }
   &__bank{
@@ -341,7 +345,7 @@ button{
     text-transform: uppercase;
     color: white;
     &--black{          
-      &:hover,&:focus{
+      &:hover,&:focus,&:active{
         color: black;
       }
 
@@ -349,7 +353,7 @@ button{
     @each $key, $color in $colors{
         &--#{$key}{
           border: 2px solid $color;          
-        &:hover,&:focus{
+        &:hover,&:focus,&:active{
           background-color: $color;
         }
         }
@@ -473,7 +477,7 @@ button{
     width: 86px;
     border-radius: 38px;
     color: white;
-    &:hover,&:focus{
+    &:hover,&:focus,&:active{
       border: 2px solid white;
       transition: all 300ms ease-in-out;
     }
@@ -486,7 +490,7 @@ button{
     color: $brand-color;
     background-color: transparent;
     width: 58px;
-    &:hover,&:focus{
+    &:hover,&:focus,&:active{
       color:  white;
       transition: all 300ms ease-in-out;
     }
@@ -524,7 +528,7 @@ button{
     @include responsive($extra){
       font-size: 1.5vw;
     }
-    &:hover,&:focus{
+    &:hover,&:focus,&:active{
       color: $brand-color;
       transition: all 300ms ease-in-out;
     }
@@ -555,7 +559,7 @@ button{
     color: white;
     text-transform: uppercase;
     
-    &:hover,&:focus{
+    &:hover,&:focus,&:active{
       color:  white;
       background-color: $brand-color;
       border:none;
@@ -606,6 +610,10 @@ button{
     font-family: $saira;
     background-color: transparent;
     border-radius: $radius;
+    &:hover,&:focus,&:active{
+      background-color: white;
+      color:$brand-color;
+    }
   }
   &__span {
     color: white;

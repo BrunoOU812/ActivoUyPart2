@@ -172,7 +172,7 @@
     opacity: 1;
   }
 }
-.info__toggle:hover, .info__toggle:focus {
+.info__toggle:hover, .info__toggle:focus, .info__toggle:active {
   opacity: 1;
 }
 .info__toggle--previous {
@@ -218,7 +218,7 @@
     opacity: 1;
   }
 }
-.purple__toggle:hover, .purple__toggle:focus {
+.purple__toggle:hover, .purple__toggle:focus, .purple__toggle:active {
   opacity: 1;
 }
 .purple__toggle--previous {
@@ -264,7 +264,7 @@
     opacity: 1;
   }
 }
-.yellow__toggle:hover, .yellow__toggle:focus {
+.yellow__toggle:hover, .yellow__toggle:focus, .yellow__toggle:active {
   opacity: 1;
 }
 .yellow__toggle--previous {
@@ -310,7 +310,7 @@
     opacity: 1;
   }
 }
-.orange__toggle:hover, .orange__toggle:focus {
+.orange__toggle:hover, .orange__toggle:focus, .orange__toggle:active {
   opacity: 1;
 }
 .orange__toggle--previous {
@@ -356,7 +356,7 @@
     opacity: 1;
   }
 }
-.red__toggle:hover, .red__toggle:focus {
+.red__toggle:hover, .red__toggle:focus, .red__toggle:active {
   opacity: 1;
 }
 .red__toggle--previous {
@@ -402,7 +402,7 @@
     opacity: 1;
   }
 }
-.green__toggle:hover, .green__toggle:focus {
+.green__toggle:hover, .green__toggle:focus, .green__toggle:active {
   opacity: 1;
 }
 .green__toggle--previous {
@@ -448,7 +448,7 @@
     opacity: 1;
   }
 }
-.blue__toggle:hover, .blue__toggle:focus {
+.blue__toggle:hover, .blue__toggle:focus, .blue__toggle:active {
   opacity: 1;
 }
 .blue__toggle--previous {
@@ -494,7 +494,7 @@
     opacity: 1;
   }
 }
-.testimonial__toggle:hover, .testimonial__toggle:focus {
+.testimonial__toggle:hover, .testimonial__toggle:focus, .testimonial__toggle:active {
   opacity: 1;
 }
 .testimonial__toggle--previous {
@@ -581,7 +581,7 @@ button {
   background-color: #ff6801;
   border: 2px solid white;
 }
-.banner__button--big:hover, .banner__button--big:focus {
+.banner__button--big:hover, .banner__button--big:focus, .banner__button--big:active {
   border: none;
 }
 .banner__button--nobg {
@@ -597,7 +597,7 @@ button {
   background-color: transparent;
   border-radius: 10px;
 }
-.banner__button--nobg:hover, .banner__button--nobg:focus {
+.banner__button--nobg:hover, .banner__button--nobg:focus, .banner__button--nobg:active {
   color: white;
   background-color: #ff6801;
 }
@@ -750,10 +750,15 @@ button {
       -ms-flex-align: stretch;
           align-items: stretch;
   width: 100%;
-  padding: 30px 260px 0 260px;
+  padding: 30px 10vw 0 10vw;
   height: 427px;
   background-color: white;
   color: #1a1a1a;
+}
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding: 30px 5px 0 5px;
+  }
 }
 .footer__bank {
   max-height: 45px;
@@ -879,43 +884,43 @@ button {
   text-transform: uppercase;
   color: white;
 }
-.games__button--black:hover, .games__button--black:focus {
+.games__button--black:hover, .games__button--black:focus, .games__button--black:active {
   color: black;
 }
 .games__button--purple {
   border: 2px solid #6a37e5;
 }
-.games__button--purple:hover, .games__button--purple:focus {
+.games__button--purple:hover, .games__button--purple:focus, .games__button--purple:active {
   background-color: #6a37e5;
 }
 .games__button--yellow {
   border: 2px solid #effd5e;
 }
-.games__button--yellow:hover, .games__button--yellow:focus {
+.games__button--yellow:hover, .games__button--yellow:focus, .games__button--yellow:active {
   background-color: #effd5e;
 }
 .games__button--orange {
   border: 2px solid #e0773e;
 }
-.games__button--orange:hover, .games__button--orange:focus {
+.games__button--orange:hover, .games__button--orange:focus, .games__button--orange:active {
   background-color: #e0773e;
 }
 .games__button--red {
   border: 2px solid #c82f2e;
 }
-.games__button--red:hover, .games__button--red:focus {
+.games__button--red:hover, .games__button--red:focus, .games__button--red:active {
   background-color: #c82f2e;
 }
 .games__button--green {
   border: 2px solid #6ee3a5;
 }
-.games__button--green:hover, .games__button--green:focus {
+.games__button--green:hover, .games__button--green:focus, .games__button--green:active {
   background-color: #6ee3a5;
 }
 .games__button--blue {
   border: 2px solid #0d49f5;
 }
-.games__button--blue:hover, .games__button--blue:focus {
+.games__button--blue:hover, .games__button--blue:focus, .games__button--blue:active {
   background-color: #0d49f5;
 }
 .games__card {
@@ -1141,7 +1146,7 @@ button {
   border-radius: 38px;
   color: white;
 }
-.header__button--join:hover, .header__button--join:focus {
+.header__button--join:hover, .header__button--join:focus, .header__button--join:active {
   border: 2px solid white;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -1157,7 +1162,7 @@ button {
   background-color: transparent;
   width: 58px;
 }
-.header__button--login:hover, .header__button--login:focus {
+.header__button--login:hover, .header__button--login:focus, .header__button--login:active {
   color: white;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -1216,7 +1221,7 @@ button {
     font-size: 1.5vw;
   }
 }
-.header__pointer:hover, .header__pointer:focus {
+.header__pointer:hover, .header__pointer:focus, .header__pointer:active {
   color: #ff6801;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -1280,7 +1285,7 @@ button {
   color: white;
   text-transform: uppercase;
 }
-.info__button:hover, .info__button:focus {
+.info__button:hover, .info__button:focus, .info__button:active {
   color: white;
   background-color: #ff6801;
   border: none;
@@ -1370,6 +1375,10 @@ button {
   font-family: "Saira", sans-serif;
   background-color: transparent;
   border-radius: 10px;
+}
+.ribbon__button:hover, .ribbon__button:focus, .ribbon__button:active {
+  background-color: white;
+  color: #ff6801;
 }
 .ribbon__span {
   color: white;
