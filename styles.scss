@@ -15,8 +15,19 @@ $colors:(
         blue:#0d49f5
             );
 $radius:10px;
+$extra:1200px;
+$large:960px;
+$medium:760px;
+$small:480px;
+$tiny:320;
 $toggle-size:35px;
 $toggle-classes: ("info","purple", "yellow", "orange", "red", "green", "blue","testimonial");
+
+@mixin responsive( $size : 480px ){
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
 
 @mixin flex($direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch) {
   display: flex;
@@ -79,15 +90,21 @@ body{
     font-family: $saira;
 }
 .banner {
-    grid-column: 1/5;
 
   &__action {
     @include flex($direction:column, $justify: space-between);
     position: absolute;
     top:150px;
-    left:300px;
+    left:16vw;
     width: 280px;
     height: 172px;
+    @include responsive($extra){
+      left:7vw;
+    }
+    @include responsive($large){
+      background-color: rgba(0,0,0,0.5);
+      left:calc(50vw - 140px);
+    }
   }
   &__button {
     display: block;
@@ -131,13 +148,22 @@ body{
     line-height: 35px;
   }
   &__img {
-    width: 1980px;
+    width:100vw;
+    height:420px;
+    object-fit: cover;
+    object-position: bottom;
   }
   &__info {
     @include flex($direction: column,$justify: space-between, $align: flex-end);
     position: absolute;
     top:150px;
-    right:300px;
+    right:16vw;
+    @include responsive($extra){
+      right:7vw;
+    }
+    @include responsive($large){
+      visibility: hidden;
+    }
     &--main {
     }
   }
@@ -321,27 +347,33 @@ body{
   }
 }
 .header { 
+  width: 100vw;
     z-index: 5; 
     color: white;
-    display: grid;
-    grid-template-columns: auto 735px 735px auto;
-    grid-column-gap:20px;
+    padding: 0 10vw;
+    @include flex($direction: row, $wrap: nowrap, $justify: space-between, $align: stretch );
   position:fixed;
   top:0;
-  width:100%;
   height: 105px;
-  justify-content:space-between;
   box-shadow: 0 8px 20px -6px black;
   background-color: $base-color;
-  &__brand {
-    display: grid;
-    grid-template-rows: auto auto;
+  @include responsive($extra){
+    padding: 0 3vw;
+    height: 10vw;
+  }
+  @include responsive($extra){
+    padding: 0 5vw;
   }
   &__anchor{
     font-size: 20px;
     transform: scaleX(70%);
     text-transform: uppercase;
-
+    @include responsive($extra){
+      font-size: 2vw;
+    }
+    @include responsive($large){
+      font-size: 2.5vw;
+    }
   }
   &__button {
     font-family: $saira;
@@ -349,11 +381,20 @@ body{
     border:none;
     height: 38px;
     background-color: $brand-color;
+    @include responsive($extra){
+      height: 3vw;
+    }   
+    @include responsive($extra){
+      height: 5vw;
+    }
     &--join {
     width: 86px;
     border-radius: 38px;
     color: white;
-
+    @include responsive($extra){
+      width: 10vw;
+      border-radius: 2.5vw; 
+    }
     }  
     &--login {
     color: $brand-color;
@@ -362,15 +403,17 @@ body{
     }
   }  
   &__container{
+    flex-grow: 1;
     @include flex($justify: space-between, $align: center);
-    grid-column:2/4;
   }
   &__group{
-        
   }
   &__img {
     margin-top: -10px;
     width:161px;
+    @include responsive($extra){
+      width:15vw;
+    }
   }
   &__li {
     list-style:none;
@@ -388,18 +431,28 @@ body{
   &__pointer{
     transform: scaleX(70%);
     text-transform: uppercase;
+    @include responsive($extra){
+      font-size: 1.5vw;
+    }
   }
   &__ul{
     width: 623px;
     @include flex($justify: space-between, $align: center);
     padding:0;
+    @include responsive($extra){
+      width: 50vw;
+    }
+    @include responsive($large){
+      visibility: hidden;
+    }
   }
 }
 .info {
+  grid-column: 2/4;
+  margin-top: calc(420px + 30px);
+  margin-bottom: 30px;
   overflow-x: hidden;
-  margin: 30px 0;
     @include flex($justify: space-between);
-    grid-column: 2/4;
   &__button {
     width: 161px;
     height: 36px;
@@ -426,7 +479,6 @@ body{
 }
 .main {
     display: grid;
-    width: 100%;
     grid-template-columns: 190px 1fr 1fr 190px;
     grid-column-gap:20px;
 }
