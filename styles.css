@@ -503,8 +503,22 @@ body {
 }
 
 .features {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  column: 2/4;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 20px;
@@ -513,6 +527,25 @@ body {
   grid-column: 2/4;
   height: 100px;
 }
+@media screen and (max-width: 1200px) {
+  .features {
+    height: 400px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 760px) {
+  .features {
+    margin: 20px 0 60px 0;
+    height: 480px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .features__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,7 +553,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 100px;
+  width: 300px;
 }
+@media screen and (max-width: 760px) {
+  .features__box {
+    margin: 3px 0;
+    min-width: 70vw;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+}
+.features__span {
+  width: 170px;
+  min-height: 50px;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -767,7 +815,7 @@ body {
   border-radius: 10px;
   border: 1px solid white;
   height: 44px;
-  margin-top: 0;
+  margin: 0 1.1vw;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
@@ -984,10 +1032,9 @@ body {
 }
 
 .info {
-  width: 100vw;
+  margin-left: 1.5vw;
   margin-top: 450px;
   margin-bottom: 30px;
-  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1014,9 +1061,11 @@ body {
   text-transform: uppercase;
 }
 .info__containers {
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 76vw;
 }
 .info__container {
   display: -webkit-box;
