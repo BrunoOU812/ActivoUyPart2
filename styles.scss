@@ -256,9 +256,15 @@ button{
   background-color: white;
   color: $black-color;
   @include responsive($extra){
-
-  padding: 30px 5px 0 5px;
+  padding: 30px 20px 0 20px;
   }
+  
+  @include responsive($large){
+    padding: 30px 20px 0 20px;
+    height: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
   &__a {
   }
   &__bank{
@@ -283,14 +289,10 @@ button{
   }
   &__logo {
     &--instagram {
-      position: absolute;
-      margin-left: 50px;
-      bottom: -1900px;
+      margin: 0 -100px
     }
     &--twitter {
-      position: absolute;
-      margin-left: 15px;
-      bottom: -1893px;
+      margin: 0 -20px
     }
   }
   &__p {
@@ -327,11 +329,17 @@ button{
     @include responsive($extra){
       grid-column: 2/4;
     }
+    @include responsive($small){
+      grid-column: 1/5;
+    }
     }
   &--poker{
     grid-column: 3/4;
     @include responsive($extra){
       grid-column: 2/4;
+    }
+    @include responsive($small){
+      grid-column: 1/5;
     }
     }
   &__button {
@@ -547,6 +555,20 @@ button{
 }
 .info {
   margin-left: 1.5vw;
+  
+  @include responsive($xxl){    
+  margin-left: -7vw;
+  }
+
+@include responsive($extra){    
+  margin-left: -3vw;
+}
+@include responsive($large){    
+  margin-left: 10vw;
+}
+@include responsive($medium){    
+  margin-left: 10vw;
+}
   margin-top: calc(420px + 30px);
   margin-bottom: 30px;
     @include flex($justify: space-between);
@@ -569,6 +591,18 @@ button{
   overflow-x: hidden;
   display: flex;
   width: 76vw;
+  @include responsive($xxl){    
+  width: 1155px;
+}
+@include responsive($extra){    
+width: 870px;
+}
+@include responsive($large){    
+width: 580px;
+}
+@include responsive($medium){    
+width: 290px;
+}
   }
   &__container {
     @include flex($direction: column, $justify: space-between, $align: center);
@@ -587,19 +621,22 @@ button{
 }
 .main {
     display: grid;
-    // grid-template-columns: calc(10vw - 20px) calc(40vw - 20px) calc(40vw - 20px) calc(10vw - 20px);
-    grid-template-columns:10% 40% 40% 10%;
+    grid-template-columns: calc(10% - 20px) calc(40% - 20px) calc(40% - 20px) calc(10% - 20px);
     grid-column-gap:20px;
+    @include responsive($large){
+      grid-template-columns: calc(1% - 20px) calc(49% - 20px) calc(49% - 20px) calc(1% - 20px);
+    }
 }
 .ribbon {
   @include flex($justify: space-between, $align: center);
-  margin-top:calc(349px - 30px);
-  left:0;
-  width: 100%;
+  
   height: 81px;
   padding: 0 225px;
-  position: absolute;
   background-color: $brand-color;
+  
+  @include responsive($large){    
+    padding:0 10px;
+  }
   &__button { 
     text-transform: uppercase;
     color: white;
@@ -610,6 +647,10 @@ button{
     font-family: $saira;
     background-color: transparent;
     border-radius: $radius;
+    @include responsive($large){ 
+      font-size: 10px;
+      width: 90px;
+    }
     &:hover,&:focus,&:active{
       background-color: white;
       color:$brand-color;
@@ -618,6 +659,9 @@ button{
   &__span {
     color: white;
     text-transform: uppercase;
+    @include responsive($large){ 
+      font-size: 10px;
+    }
   }
   &__stretch{
     transform: scaleX(70%);
