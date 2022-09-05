@@ -724,7 +724,7 @@ button {
 @media screen and (max-width: 760px) {
   .features__box {
     margin: 3px 0;
-    min-width: 70vw;
+    min-width: 91vw;
     border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
   }
@@ -1474,9 +1474,9 @@ button {
 }
 
 .testimonials {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
   padding: 0 195px 30px 195px;
   margin-bottom: 30px;
 }
@@ -1513,7 +1513,23 @@ button {
   font-family: rubik, sans-serif;
   font-size: 20px;
   width: 60vw;
+  width: 1200px;
   overflow: hidden;
+}
+@media screen and (max-width: 1600px) {
+  .testimonials__cards {
+    width: 820px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .testimonials__cards {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .testimonials__cards {
+    width: 270px;
+  }
 }
 .testimonials__h2 {
   text-align: center;

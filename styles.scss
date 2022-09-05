@@ -236,7 +236,7 @@ button{
     width: 300px;
     @include responsive($medium){
       margin: 3px 0;
-      min-width: 70vw;
+      min-width: 91vw;
     border:2px solid rgba(0,0,0,0.3);
     border-radius: $radius;
     }
@@ -671,7 +671,7 @@ width: 290px;
   }
 }
 .testimonials {
-    grid-column: 2/4;
+    grid-column: 1/5;
     padding: 0 195px 30px 195px;
     margin-bottom: 30px;
     @include responsive($large){
@@ -691,7 +691,17 @@ width: 290px;
     font-family: $rubik;
     font-size: 20px;
     width: 60vw;
-    overflow: hidden;
+      width: 1200px;
+      overflow: hidden;
+    @include responsive($xxl){
+      width: 820px;
+    }
+    @include responsive($extra){
+      width: 550px;
+    }
+    @include responsive($medium){
+      width: 270px;
+    }
   }
   &__h2 {
     text-align: center;
