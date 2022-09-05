@@ -991,7 +991,7 @@ button {
           align-items: stretch;
   margin-top: -20px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 760px) {
   .games__cards {
     max-width: 230px;
   }
