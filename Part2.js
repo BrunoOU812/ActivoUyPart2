@@ -63,7 +63,9 @@ const hamburguer = ()=>{
     switchContent=!switchContent;
     const open= switchContent==false?"none":"block";
     const close= switchContent==true?"none":"block";
+    const visibility= switchContent==true?"hidden":"visible";
     document.querySelector("#open").style.display=open;
     document.querySelector("#close").style.display=close;
+    document.querySelector(".header__ul").style.visibility=visibility;
 }
 document.querySelector(".header__button--hamburguer").addEventListener("click",hamburguer);

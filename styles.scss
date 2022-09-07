@@ -521,10 +521,14 @@ button{
       @include responsive($large){
         display: block;
       }
-      &:hover,&:focus{
+      &:hover{
         color: $brand-color;
         opacity: 1;
       }
+    }
+    &--x{
+      transform: scaleX(200%);
+      transform: rotate(90deg);
     }
   }  
   &__group{
@@ -559,20 +563,35 @@ button{
     @include responsive($extra){
       font-size: 1.5vw;
     }
+    @include responsive($large){
+      font-size: 4vw;
+    }
     &:hover,&:focus,&:active{
       color: $brand-color;
       transition: all 300ms ease-in-out;
     }
   }
   &__ul{
+    visibility: visible;
     width: 623px;
     @include flex($justify: space-between, $align: center);
     padding:0;
     @include responsive($extra){
       width: 50vw;
+      visibility: visible;
     }
     @include responsive($large){
-      visibility: hidden;
+    visibility: hidden;
+    margin-top: 5vw;
+    margin-left: -57vw;
+    position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: $base-color;
+      width: 110vw;
+      height: 70vw;
     }
   }
 }
