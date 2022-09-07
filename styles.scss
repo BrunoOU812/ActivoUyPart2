@@ -23,7 +23,7 @@ $small:480px;
 $tiny:320;
 $toggle-size:35px;
 $toggle-classes: ("info","purple", "yellow", "orange", "red", "green", "blue","testimonial");
-
+$nav-height:105px;
 @mixin responsive( $size : 480px ){
   @media screen and (max-width: $size) {
     @content;
@@ -103,14 +103,14 @@ $toggle-classes: ("info","purple", "yellow", "orange", "red", "green", "blue","t
 
 
 *{
-  
+  scroll-behavior: smooth;
   margin:0;
   padding:0;
   box-sizing: border-box;
 }
 body{
   overflow-x: hidden;
-    margin: 0;
+    
     color: white;
     background-color: $base-color;
     font-family: $saira;
@@ -316,7 +316,7 @@ button{
   }
 }
 .games {
-    margin: 30px 0;
+    margin: calc(30px + $nav-height) 0;
     @include flex($direction: column, $justify: space-between);
     font-family: $rubik;
     text-transform: uppercase;
@@ -447,14 +447,16 @@ button{
   }
 }
 .header { 
+  // top:calc($nav-height * -1);
   width: 100vw;
+  // margin-bottom: $nav-height;
     z-index: 5; 
     color: white;
     padding: 0 10vw;
     @include flex($direction: row, $wrap: nowrap, $justify: space-between, $align: stretch );
   position:fixed;
   top:0;
-  height: 105px;
+  height: $nav-height;
   box-shadow: 0 8px 20px -6px black;
   background-color: $base-color;
   @include responsive($extra){
