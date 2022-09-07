@@ -447,9 +447,7 @@ button{
   }
 }
 .header { 
-  // top:calc($nav-height * -1);
   width: 100vw;
-  // margin-bottom: $nav-height;
     z-index: 5; 
     color: white;
     padding: 0 10vw;
@@ -487,6 +485,9 @@ button{
       height: 4vw;
     }
     &--join {
+      @include responsive($large){
+        display: none;
+      }
     width: 86px;
     border-radius: 38px;
     color: white;
@@ -500,6 +501,9 @@ button{
     }
     }  
     &--login {
+      @include responsive($large){
+        display: none;
+      }
     color: $brand-color;
     background-color: transparent;
     width: 58px;
@@ -508,12 +512,26 @@ button{
       transition: all 300ms ease-in-out;
     }
     }
+    &--hamburguer{
+      color: white;
+      font-size: 20px;
+      opacity: 0.5;
+      transform: rotate(90deg);
+      display: none;
+      @include responsive($large){
+        display: block;
+      }
+      &:hover,&:focus{
+        color: $brand-color;
+        opacity: 1;
+      }
+    }
   }  
+  &__group{
+  }
   &__container{
     flex-grow: 1;
     @include flex($justify: space-between, $align: center);
-  }
-  &__group{
   }
   &__img {
     margin-top: -10px;

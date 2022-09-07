@@ -1172,6 +1172,11 @@ button {
   border-radius: 38px;
   color: white;
 }
+@media screen and (max-width: 960px) {
+  .header__button--join {
+    display: none;
+  }
+}
 .header__button--join:hover, .header__button--join:focus, .header__button--join:active {
   border: 2px solid white;
   -webkit-transition: all 300ms ease-in-out;
@@ -1188,10 +1193,32 @@ button {
   background-color: transparent;
   width: 58px;
 }
+@media screen and (max-width: 960px) {
+  .header__button--login {
+    display: none;
+  }
+}
 .header__button--login:hover, .header__button--login:focus, .header__button--login:active {
   color: white;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+}
+.header__button--hamburguer {
+  color: white;
+  font-size: 20px;
+  opacity: 0.5;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .header__button--hamburguer {
+    display: block;
+  }
+}
+.header__button--hamburguer:hover, .header__button--hamburguer:focus {
+  color: #ff6801;
+  opacity: 1;
 }
 .header__container {
   -webkit-box-flex: 1;

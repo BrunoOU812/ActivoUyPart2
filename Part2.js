@@ -1,3 +1,8 @@
+
+
+
+
+
 const extractWord=(word)=>{
     const regEx=/[a-z][a-z]*/gi;
     return word.match(regEx).join();
@@ -52,3 +57,13 @@ const toggle= (pointer)=>{
 const toggleClasses= ["#info","#purple", "#yellow", "#orange", "#red", "#green", "#blue","#testimonial"];
 
 toggleClasses.forEach(item=>toggle(item));
+
+let switchContent=true;
+const hamburguer = ()=>{
+    switchContent=!switchContent;
+    const open= switchContent==false?"none":"block";
+    const close= switchContent==true?"none":"block";
+    document.querySelector("#open").style.display=open;
+    document.querySelector("#close").style.display=close;
+}
+document.querySelector(".header__button--hamburguer").addEventListener("click",hamburguer);
