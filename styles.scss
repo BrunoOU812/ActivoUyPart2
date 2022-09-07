@@ -501,9 +501,6 @@ button{
     }
     }  
     &--login {
-      @include responsive($large){
-        display: none;
-      }
     color: $brand-color;
     background-color: transparent;
     width: 58px;
@@ -532,6 +529,7 @@ button{
     }
   }  
   &__group{
+    @include flex();
   }
   &__container{
     flex-grow: 1;
