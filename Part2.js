@@ -1,8 +1,3 @@
-
-
-
-
-
 const extractWord=(word)=>{
     const regEx=/[a-z][a-z]*/gi;
     return word.match(regEx).join();
@@ -27,7 +22,6 @@ const toggle= (pointer)=>{
     const parent = document.querySelector(pointer);
     const grand=parent.parentNode;
     grand.prepend(slide);
-    console.log("grand",grand);
     const elements=parent.querySelectorAll(':scope > div');
     const btn=btnArray(pointer);
     slide.prepend(btn[0]);
@@ -58,14 +52,32 @@ const toggleClasses= ["#info","#purple", "#yellow", "#orange", "#red", "#green",
 
 toggleClasses.forEach(item=>toggle(item));
 
+
 let switchContent=true;
-const hamburguer = ()=>{
-    switchContent=!switchContent;
-    const open= switchContent==false?"none":"block";
-    const close= switchContent==true?"none":"block";
-    const visibility= switchContent==true?"hidden":"visible";
+const values=(open,close,visibility)=>{
     document.querySelector("#open").style.display=open;
     document.querySelector("#close").style.display=close;
     document.querySelector(".header__ul").style.visibility=visibility;
 }
+const hamburguer = ()=>{
+    switchContent=!switchContent;
+    open= switchContent==false?"none":"block";
+    close= switchContent==true?"none":"block";
+    visibility= switchContent==true?"hidden":"visible";    
+    values(open,close,visibility);
+}
 document.querySelector(".header__button--hamburguer").addEventListener("click",hamburguer);
+  
+
+window.addEventListener("resize", function() {
+    if (window.innerWidth > 960) {
+    document.querySelector(".header__ul").style.visibility="visible";
+    document.querySelector(".header__ul").removeEventListener("click",hamburguer);
+}else{
+    document.querySelector(".header__ul").style.visibility="hidden";
+    values("block","none","hidden");
+    document.querySelector(".header__ul").addEventListener("click",hamburguer);
+}
+  });
+  
+  
