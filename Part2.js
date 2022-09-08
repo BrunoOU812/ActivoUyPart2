@@ -61,9 +61,9 @@ const values=(open,close,visibility)=>{
 }
 const hamburguer = ()=>{
     switchContent=!switchContent;
-    open= switchContent==false?"none":"block";
-    close= switchContent==true?"none":"block";
-    visibility= switchContent==true?"hidden":"visible";    
+    const open= switchContent==false?"none":"block";
+    const close= switchContent==true?"none":"block";
+    const visibility= switchContent==true?"hidden":"visible";    
     values(open,close,visibility);
 }
 document.querySelector(".header__button--hamburguer").addEventListener("click",hamburguer);
