@@ -513,11 +513,12 @@
 }
 
 * {
-  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
 }
 
 body {
@@ -1332,7 +1333,7 @@ button {
   .header__ul {
     visibility: hidden;
     margin-top: 5vw;
-    margin-left: -57vw;
+    margin-left: -50vw;
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;

@@ -103,10 +103,11 @@ $nav-height:105px;
 
 
 *{
-  scroll-behavior: smooth;
   margin:0;
   padding:0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc($nav-height + 25px);
 }
 body{
   overflow-x: hidden;
@@ -581,7 +582,7 @@ button{
     @include responsive($large){
     visibility: hidden;
     margin-top: 5vw;
-    margin-left: -57vw;
+    margin-left: -50vw;
     position: fixed;
       display: flex;
       flex-direction: column;
