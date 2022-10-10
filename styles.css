@@ -1002,10 +1002,6 @@ button {
     max-width: 230px;
   }
 }
-.games__cards--cutted {
-  height: 230px;
-  overflow: hidden;
-}
 .games__container {
   display: -webkit-box;
   display: -ms-flexbox;

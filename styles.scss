@@ -4,7 +4,7 @@
 $base-color:#333;
 $brand-color:#ff6801;
 $black-color:#1a1a1a;
-$rubik:rubik, sans-serif;
+$rubik:'rubik', sans-serif;
 $saira:'Saira', sans-serif;
 $colors:(
         purple:#6a37e5,
@@ -109,6 +109,7 @@ $nav-height:105px;
   scroll-behavior: smooth;
   scroll-padding-top: calc($nav-height + 25px);
 }
+
 body{
   overflow-x: hidden;
     
@@ -116,10 +117,12 @@ body{
     background-color: $base-color;
     font-family: $saira;
 }
+
 button{
   transition: all 300ms ease-in-out;
   cursor: pointer;
 }
+
 .banner {
 
   &__action {
@@ -391,10 +394,7 @@ button{
     @include responsive($medium){
       max-width: 230px;
     }
-    &--cutted{
-        height:230px;
-        overflow: hidden;
-    }
+
   }
   &__container {
     @include flex($direction: column, $justify:space-between);
